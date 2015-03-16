@@ -10,12 +10,12 @@
 
   <div id="menu">
     <ul>
-      <li><a href="/admin/author">Authors</a>&nbsp;|&nbsp;</li>
-      <li><a href="/admin/publisher">Publishers</a>&nbsp;|&nbsp;</li>
-      <li><a href="/admin/book">Books</a>&nbsp;|&nbsp;</li>
-      <li><a href="/admin/order">Orders</a>&nbsp;|&nbsp;</li>
-      <li><a href="/">Catalog</a>&nbsp;|&nbsp;</li>
-      <li><a href="/about">About</a>&nbsp;</li>
+      <li><a href="/admin/home">Inicio</a>&nbsp;|&nbsp;</li>
+      <li><a href="/admin/articles">Componentes</a>&nbsp;|&nbsp;</li>
+      <li><a href="/admin/manufacturers">Fabricantes</a>&nbsp;|&nbsp;</li>
+      <li><a href="/admin/orders">Pedidos</a>&nbsp;|&nbsp;</li>
+      <li><a href="/admin/catalog">Catálogo</a>&nbsp;|&nbsp;</li>
+      <li><a href="/about">Quiénes somos</a>&nbsp;</li>
     </ul>
   </div>
 
