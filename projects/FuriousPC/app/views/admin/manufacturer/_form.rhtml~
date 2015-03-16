@@ -1,0 +1,7 @@
+<%= error_messages_for 'manufacturer' %>
+<p><label for="manufacturer_name">Manufacturer name</label><br/>
+<%= text_field 'manufacturer', 'name' %></p>
+<p><label for="manufacturer_tlf">Manufacturer phone</label><br/>
+<%= text_field 'manufacturer', 'phone' %></p>
+<p><label for="manufacturer_direction">Manufacturer direction</label><br/>
+<%= text_field 'manufacturer', 'direction' %></p>
