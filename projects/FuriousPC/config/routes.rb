@@ -1,4 +1,32 @@
 Rails.application.routes.draw do
+  namespace :admin do
+  get 'manufacturer/new'
+  end
+
+  namespace :admin do
+  get 'manufacturer/create'
+  end
+
+  namespace :admin do
+  get 'manufacturer/edit'
+  end
+
+  namespace :admin do
+  get 'manufacturer/update'
+  end
+
+  namespace :admin do
+  get 'manufacturer/destroy'
+  end
+
+  namespace :admin do
+  get 'manufacturer/show'
+  end
+
+  namespace :admin do
+  get 'manufacturer/index'
+  end
+
   get 'about/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
