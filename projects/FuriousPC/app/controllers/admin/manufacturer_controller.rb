@@ -30,7 +30,7 @@ end
 end
 
   def index
- @manufacturers = Manufacturer.find(params[:all])
+ @manufacturers = Manufacturer.all
  @page_title = 'Listing manufacturer'
   end
   private

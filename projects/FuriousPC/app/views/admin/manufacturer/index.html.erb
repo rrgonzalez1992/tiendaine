@@ -1,21 +1,11 @@
-<h1>Admin::Manufacturer#index</h1>
-<p>Find me in app/views/admin/manufacturer/index.html.erb</p>
 <table>
- <tr>
- <th>Name</th>
- <th>Edit</th>
- <th>Delete</th>
- </tr>
+  <tr>
+    <th>Name</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
 
- <%= render :partial => 'manufacturer', :collection => @manufacturers %>
+  <%= render :partial => 'manufacturer', :collection => @manufacturers %>
 </table>
+
 <p><%= link_to 'Add a new manufacturer', :action => 'new' %></p>
-<tr>
- <td><%= link_to manufacturer.name, :action => 'show', :id => manufacturer %></td>
- <td><%= link_to 'Edit', :action => 'edit', :id => manufacturer %></td>
- <td>
- <%= button_to 'Delete', {:action => 'destroy', :id => manufacturer},
- :confirm =>
- "Are you sure you want to delete manufacturer #{manufacturer.name}?" %>
- </td>
-</tr>
