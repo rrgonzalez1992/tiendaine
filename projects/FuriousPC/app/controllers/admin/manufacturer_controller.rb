@@ -5,9 +5,9 @@ class Admin::ManufacturerController < ApplicationController
   end
 
   def create
-@author = Author.new(params[:author])
-if @author.save
-flash[:notice] = "Author #{@author.name} was successfully created."
+@manufacturer = Manufacturer.new(manufacturer_params)
+if @manufacturer.save
+flash[:notice] = "Manufacturer #{@manufacturer.name} was successfully created."
 redirect_to :action => 'index'
 else
 @page_title = 'Create new author'
@@ -25,8 +25,16 @@ end
   end
 
   def show
-  end
+ @manufacturer = Manufacturer.find(params[:id])
+ @page_title = @manufacturer.name  
+end
 
   def index
+ @manufacturers = Manufacturer.find(params[:all])
+ @page_title = 'Listing manufacturer'
   end
+  private
+    def manufacturer_params
+      params.require(:manufacturer).permit(:name, :tlf, :phone, :direction)
+    end
 end

@@ -1,0 +1,19 @@
+class Manufacturer < ActiveRecord::Base
+	validates_presence_of :name, :tlf, :direction, :phone
+end
+
+def name
+	"#{name}"
+end
+
+def tlf
+	"#{tlf}"
+end
+
+def direction
+	"#{direction}"
+end
+
+def phone
+	"#{phone}"
+end

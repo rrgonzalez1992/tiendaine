@@ -1,2 +1,15 @@
 <h1>Admin::Manufacturer#show</h1>
 <p>Find me in app/views/admin/manufacturer/show.html.erb</p>
+
+<dl>
+ <dt>Name</dt>
+ <dd><%= @manufacturer.name %></dd>
+ <dt>Phone</dt>
+ <dd><%= @manufacturer.tlf %></dd>
+ <dt>Mobile Phone</dt>
+ <dd><%= @manufacturer.phone %></dd>
+ <dt>Direction</dt>
+ <dd><%= @manufacturer.direction %></dd>
+</dl>
+<p><%= link_to 'Edit', :action => 'edit', :id => @author %> |
+<%= link_to 'Back', :action => 'index' %></p>
