@@ -14,10 +14,12 @@ Rails.application.routes.draw do
 
   namespace :admin do
   get 'manufacturer/update'
+  post 'manufacturer/update'
   end
 
   namespace :admin do
   get 'manufacturer/destroy'
+  post 'manufacturer/destroy'
   end
 
   namespace :admin do

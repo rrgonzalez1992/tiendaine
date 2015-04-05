@@ -1,2 +1,11 @@
 <h1>Admin::Manufacturer#edit</h1>
 <p>Find me in app/views/admin/manufacturer/edit.html.erb</p>
+
+<%= form_tag :action => 'update', :id => @manufacturer do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Actualizar entidad' %>
+<% end %>
+
+
+<%= link_to 'Mostrar', :action => 'show', :id => @manufacturer %> |
+<%= link_to 'Atrás', :action => 'index' %>

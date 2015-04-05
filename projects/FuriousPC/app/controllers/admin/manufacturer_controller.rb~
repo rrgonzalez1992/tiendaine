@@ -10,18 +10,32 @@ if @manufacturer.save
 flash[:notice] = "Manufacturer #{@manufacturer.name} was successfully created."
 redirect_to :action => 'index'
 else
-@page_title = 'Create new author'
+@page_title = 'Create new manufacturer'
 render :action => 'new'
 end
 end
 
   def edit
+@manufacturer = Manufacturer.find(params[:id])
+    @page_title = 'Edit manufacturer'
   end
 
   def update
+ @manufacturer = Manufacturer.find(params[:id])
+    if @manufacturer.update_attributes(person_params)
+      flash[:notice] = "El fabricante #{@manufacturer.name} ha sido actualizado."
+      redirect_to :action => 'show', :id => @manufacturer
+    else
+      @page_title = 'Editar fabricante'
+      render :action => 'edit'
+    end
   end
 
   def destroy
+ @manufacturer = Manufacturer.find(params[:id])
+    @manufacturer.destroy
+    flash[:notice] = "Se ha borrado el fabricante #{@manufacturer.name}."
+    redirect_to :action => 'index'
   end
 
   def show
@@ -30,7 +44,7 @@ end
 end
 
   def index
- @manufacturers = Manufacturer.find(params[:id])
+ @manufacturers = Manufacturer.all
  @page_title = 'Listing manufacturer'
   end
   private
