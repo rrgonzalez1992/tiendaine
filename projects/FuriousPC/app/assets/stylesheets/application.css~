@@ -17,6 +17,6 @@
 
 section .imagen_logo {
    float: left;
-   width: 800%;
+   width: 20%;
 
 }

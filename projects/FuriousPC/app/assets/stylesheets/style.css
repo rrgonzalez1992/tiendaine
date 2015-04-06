@@ -14,7 +14,7 @@ span{
 
 
 body {
-  background-color: silver; 
+  background-color: #eee; 
   color: #333;
 }
 
@@ -87,7 +87,7 @@ margin-top: -170px;
   padding: 2px;
   margin: 2px;
   list-style: none;
-  border-bottom: 5px solid #8B0000;
+  border-bottom: 5px solid red;
 }
 
 #menu ul li {
@@ -216,3 +216,6 @@ padding-bottom: 15px;
 #checkout fieldset input:focus {
   background-color: #CCCCCC;
 }
+
+
+
