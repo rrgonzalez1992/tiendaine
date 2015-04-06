@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 <div class="imagen_logo">
   <%= image_tag "Logo_FuriousPC.png", :alt => "Logo", :title => "Logo" ,  :width => 80 %>
-<strong><p style="font-size: 50px;margin-left: 160px;margin-top:-70px ;font-family: Verdana, Geneva, sans-serif; color:black;">FuriousPC</p></strong>
+<strong><p style="font-size: 50px;margin-left: 86px;margin-top:-51px ;font-family: Verdana, Geneva, sans-serif; color:black;">FuriousPC</p></strong>
 </div>
 </head>
 <body>
