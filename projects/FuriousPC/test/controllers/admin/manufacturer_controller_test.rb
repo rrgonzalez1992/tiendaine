@@ -1,6 +1,7 @@
 require File.dirname(__FILE__) + '/../../test_helper'
 
 class Admin::ManufacturerControllerTest < ActionController::TestCase
+	fixtures :manufacturers
   test "new" do
     get :new
     assert_response :success
@@ -16,10 +17,10 @@ class Admin::ManufacturerControllerTest < ActionController::TestCase
 
   test "edit" do
     get :edit, :id => 1
-    assert_tag :tag => 'input', :attributes => {:name => 'manufacturer [name]', :value => 'Prueba Edit'}
-    assert_tag :tag => 'input', :attributes => {:name => 'manufacturer [tlf]', :value => '111111111'}
-    assert_tag :tag => 'input', :attributes => {:name => 'manufacturer [phone]', :value => '222222222'}
-    assert_tag :tag => 'input', :attributes => {:name => 'manufacturer [direction]', :value => 'Prueba Direccion Edit'}
+    assert_tag :tag => 'input', :attributes => {:name => 'manufacturer[name]', :value => 'Prueba Edit'}
+    assert_tag :tag => 'input', :attributes => {:name => 'manufacturer[tlf]', :value => '111111111'}
+    assert_tag :tag => 'input', :attributes => {:name => 'manufacturer[phone]', :value => '222222222'}
+    assert_tag :tag => 'input', :attributes => {:name => 'manufacturer[direction]', :value => 'Prueba Direccion Edit'}
   end
 
   test "update" do
@@ -38,13 +39,13 @@ class Admin::ManufacturerControllerTest < ActionController::TestCase
   test "destroy" do
     assert_difference(Manufacturer, :count, -1) do
     	post :destroy, :id => 1
-    	assert_equal flash[:notice], 'Se ha borrado el fabricante'
+    	assert_equal flash[:notice], 'Se ha borrado el fabricante Intel.'
     	assert_response :redirect
     	assert_redirected_to :action => 'index'
     	get :index
     	assert_response :success
     	assert_tag :tag => 'div', :attributes => {:id => 'notice'},
-                 :content => 'Se ha borrado el fabricante.'
+                 :content => 'Se ha borrado el fabricante Intel.'
     end
   end
 

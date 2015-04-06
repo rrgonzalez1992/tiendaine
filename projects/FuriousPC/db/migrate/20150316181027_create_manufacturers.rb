@@ -1,5 +1,5 @@
 class CreateManufacturers < ActiveRecord::Migration
-  def self.up
+  def change
     create_table :manufacturers do |t|
 	t.column :name, :string
 	t.column :tlf, :string
@@ -7,8 +7,5 @@ class CreateManufacturers < ActiveRecord::Migration
 	t.column :phone, :string
       t.timestamps
     end
-  end
-  def self.down
-    drop_table :manufacturers
   end
 end

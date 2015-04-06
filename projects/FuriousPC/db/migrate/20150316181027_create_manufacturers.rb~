@@ -1,7 +1,6 @@
 class CreateManufacturers < ActiveRecord::Migration
-  def self.up
+  def change
     create_table :manufacturers do |t|
-	t.column :id, :integer
 	t.column :name, :string
 	t.column :tlf, :string
 	t.column :direction, :string
