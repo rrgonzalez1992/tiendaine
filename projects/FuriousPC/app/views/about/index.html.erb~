@@ -1,7 +1,9 @@
-<br><span><strong>FuriousPC</strong>, tu tienda de componentes informáticos</span>
-<h2>Realizado por: </h2>
-<h3>Laura Álvarez Gallego </h3>
-<h3>Enrique Arauz Morales </h3>
-<h3>Enrique Montero Pérez </h3>
-<h3>Ramón Ramírez González</h3>
-<h3>Jeirgino Ranarivelo</h3>
+<br><span><strong>FuriousPC</strong>, tu tienda de componentes informáticos</span> <%= image_tag "carrito.png", :alt => "Carrito", :title => "Carrito" ,  :width => 150 %>
+<h2 style="margin-left: 570px;">Realizada por: </h3>
+<p style="margin-left: 570px;">Laura Álvarez Gallego </p>
+<p style="margin-left: 570px;">Enrique Arauz Morales </p>
+<p style="margin-left: 570px;">Enrique Montero Pérez </p>
+<p style="margin-left: 570px;">Ramón Ramírez González</p>
+<p style="margin-left: 570px;">Jeirgino Ranarivelo</p>
+
+<div id="aside">HOLAAA</div>
