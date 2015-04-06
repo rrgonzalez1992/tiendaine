@@ -1,4 +1,5 @@
 
+<p>Ruta: app/views/admin/manufacturer/new.html.erb</p>
 <%= form_tag :action => 'create' %>
 <%= render :partial => 'form' %>
 <%= submit_tag 'Crear' %>
