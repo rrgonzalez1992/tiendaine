@@ -1,4 +1,4 @@
-reqquire File.dirname(__FILE__) + '/../test_helper'
+require File.dirname(__FILE__) + '/../../test_helper'
 
 class Admin::ManufacturerControllerTest < ActionController::TestCase
   test "new" do
@@ -8,11 +8,10 @@ class Admin::ManufacturerControllerTest < ActionController::TestCase
 
   test "create" do
     num_manufacturers = Manufacturer.count
-    post :create, :manufacturer => {:name => 'Prueba', :phone => '987654321', 
-    	  :tlf => '123456789', :direction: 'Direccion Prueba'}
+    post :create, :manufacturer => {:name => 'Prueba',:tlf => '123456789', :direction =>'Direccion Prueba', :phone => '987654321'}
     	  assert_response :redirect
     	  assert_redirected_to :action => 'index'
-    	  assert_equal num_manufacturers +1, Manufacturer.count
+    	  assert_equal num_manufacturers + 1, Manufacturer.count
   end
 
   test "edit" do
@@ -25,8 +24,8 @@ class Admin::ManufacturerControllerTest < ActionController::TestCase
 
   test "update" do
     post :update, :id => 1, :manufacturer => {:name => 'Prueba Update',
-    										  :tlf => '333333333'
-    										  :phone => '444444444'
+    										  :tlf => '333333333',
+    										  :phone => '444444444',
     										  :direction => 'Prueba Direccion Update'}
     assert_response :redirect
     assert_redirected_to :action => 'show', :id => 1

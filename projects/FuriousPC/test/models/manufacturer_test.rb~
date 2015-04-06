@@ -7,10 +7,6 @@ class ManufacturerTest < ActiveSupport::TestCase
   test "failing_create" do
   	manufacturer = Manufacturer.new
   	assert_equal false, manufacturer.save
-	assert manufacturer.errors[:name]
-	assert manufacturer.errors[:tlf]
-	assert manufacturer.errors[:phone]
-	assert manufacturer.errors[:direction]
   end
 
   test "create" do
