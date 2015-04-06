@@ -2,7 +2,7 @@
 <%= text_field 'manufacturer', 'name' %></p>
 <p><label for="manufacturer_tlf">Teléfono del fabricante</label><br/>
 <%= text_field 'manufacturer', 'tlf' %></p>
-<p><label for="manufacturer_tlf">Teléfono móvil del fabricantee</label><br/>
+<p><label for="manufacturer_tlf">Teléfono móvil del fabricante</label><br/>
 <%= text_field 'manufacturer', 'phone' %></p>
 <p><label for="manufacturer_direction">Dirección del fabricante</label><br/>
 <%= text_field 'manufacturer', 'direction' %></p>

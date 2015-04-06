@@ -3,7 +3,7 @@
 
 <%= form_tag :action => 'update', :id => @manufacturer do %>
   <%= render :partial => 'form' %>
-  <%= submit_tag 'Actualizar entidad' %>
+  <%= submit_tag 'Actualizar fabricante' %>
 <% end %>
 
 

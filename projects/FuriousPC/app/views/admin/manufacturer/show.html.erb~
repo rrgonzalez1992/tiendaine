@@ -12,4 +12,4 @@
  <dd><%= @manufacturer.direction %></dd>
 </dl>
 <p><%= link_to 'Editar', :action => 'edit', :id => @manufacturer%> |
-<%= link_to 'Volver', :action => 'index' %></p>
+<%= link_to 'Volver atrás', :action => 'index' %></p>
