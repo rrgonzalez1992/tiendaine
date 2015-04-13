@@ -30,8 +30,6 @@ Rails.application.routes.draw do
   get 'customer/index'
   end
 
-  get 'admin/customer'
-
   namespace :admin do
   get 'manufacturer/new'
   end
