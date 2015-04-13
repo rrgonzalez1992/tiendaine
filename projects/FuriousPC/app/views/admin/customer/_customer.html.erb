@@ -1,0 +1,8 @@
+<tr>
+  <td><%= link_to customer.first_name, :action => 'show', :id => customer %></td>
+  <td><%= link_to 'Editar', :action => 'edit', :id => customer %></td>
+  <td>
+    <%= button_to 'Borrar', { :action => 'destroy', :id => customer },
+        data: { confirm: "Estás seguro de querer borrar #{customer.first_name} #{customer.last_name}?" } %>   
+  </td>
+</tr>

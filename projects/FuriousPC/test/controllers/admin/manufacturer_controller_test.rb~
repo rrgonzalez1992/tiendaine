@@ -56,6 +56,9 @@ class Admin::ManufacturerControllerTest < ActionController::TestCase
     assert_not_nil assigns(:manufacturer)
     assert assigns(:manufacturer).valid?
     assert_tag "h1", :content => Manufacturer.find(1).name
+    assert_tag "h1", :content => Manufacturer.find(1).tlf
+    assert_tag "h1", :content => Manufacturer.find(1).phone
+    assert_tag "h1", :content => Manufacturer.find(1).direction
   end
 
   test "index" do
@@ -64,6 +67,9 @@ class Admin::ManufacturerControllerTest < ActionController::TestCase
     assert_tag :tag => 'table', :children => { :count => Manufacturer.count + 1, :only => {:tag => 'tr'} }
   	Manufacturer.find_each do |m|
   		assert_tag :tag => 'td', :content => m.name
+  		assert_tag :tag => 'td', :content => m.tlf
+  		assert_tag :tag => 'td', :content => m.phone
+  		assert_tag :tag => 'td', :content => m.direction
   	end
   end
 end

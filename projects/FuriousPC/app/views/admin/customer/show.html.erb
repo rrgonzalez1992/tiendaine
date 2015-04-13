@@ -1,0 +1,19 @@
+
+<dl>
+ <dt>Nombre</dt>
+ <dd><%= @customer.first_name %></dd>
+ <dt>Apellidos</dt>
+ <dd><%= @customer.last_name %></dd>
+  <dt>DNI</dt>
+ <dd><%= @customer.identity %></dd>
+ <dt>Teléfono</dt>
+ <dd><%= @customer.phone %></dd>
+ <dt>Dirección</dt>
+ <dd><%= @customer.direction %></dd>
+ <dt>Codigo Postal</dt>
+ <dd><%= @customer.postal_code %></dd>
+ <dt>Ciudad</dt>
+ <dd><%= @customer.city %></dd>
+</dl>
+<p><%= link_to 'Editar', :action => 'edit', :id => @customer%> |
+<%= link_to 'Volver atrás', :action => 'index' %></p>

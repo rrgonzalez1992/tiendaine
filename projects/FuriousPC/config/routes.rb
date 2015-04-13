@@ -1,5 +1,38 @@
 Rails.application.routes.draw do
   namespace :admin do
+  get 'customer/new'
+  end
+
+  namespace :admin do
+  get 'customer/create'
+  post 'customer/create'
+  end
+
+  namespace :admin do
+  get 'customer/edit'
+  end
+
+  namespace :admin do
+  get 'customer/update'
+  post 'customer/update'
+  end
+
+  namespace :admin do
+  get 'customer/destroy'
+  post 'customer/destroy'
+  end
+
+  namespace :admin do
+  get 'customer/show'
+  end
+
+  namespace :admin do
+  get 'customer/index'
+  end
+
+  get 'admin/customer'
+
+  namespace :admin do
   get 'manufacturer/new'
   end
 

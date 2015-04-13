@@ -4,18 +4,8 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-intel:
-  id: 1
-  name: Intel
-  tlf: 1-INTEL-12345
-  phone: 2-INTEL-12345
-  direction: Direccion Intel
+one: {}
 # column: value
 #
-amd: 
-  id: 2
-  name: AMD
-  tlf: 1-AMD-12345
-  phone: 2-AMD-12345
-  direction: Direccion AMD
+two: {}
 #  column: value
