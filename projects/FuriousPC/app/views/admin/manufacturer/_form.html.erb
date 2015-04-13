@@ -1,0 +1,24 @@
+
+
+<% if @manufacturer.errors.any? %>
+  <div id="errorExplanation">
+  <h2><%= pluralize(@manufacturer.errors.count, "error") %> impide que se guarden sus modificaciones:</h2>
+    <ul>
+      <% @manufacturer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+
+
+<p><label for="manufacturer_name">Nombre del fabricante</label><br/>
+<%= text_field 'manufacturer', 'name' %></p>
+<p><label for="manufacturer_tlf">Teléfono del fabricante</label><br/>
+<%= text_field 'manufacturer', 'tlf' %></p>
+<p><label for="manufacturer_tlf">Teléfono móvil del fabricante</label><br/>
+<%= text_field 'manufacturer', 'phone' %></p>
+<p><label for="manufacturer_direction">Dirección del fabricante</label><br/>
+<%= text_field 'manufacturer', 'direction' %></p>

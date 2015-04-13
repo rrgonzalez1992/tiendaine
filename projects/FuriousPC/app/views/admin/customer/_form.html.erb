@@ -1,0 +1,30 @@
+
+
+<% if @customer.errors.any? %>
+  <div id="errorExplanation">
+  <h2><%= pluralize(@customer.errors.count, "error") %> impide que se guarden sus modificaciones:</h2>
+    <ul>
+      <% @customer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+
+
+<p><label for="customer_first_name">Nombre del cliente</label><br/>
+<%= text_field 'customer', 'first_name' %></p>
+<p><label for="customer_last_name">Apellidos del cliente</label><br/>
+<%= text_field 'customer', 'last_name' %></p>
+<p><label for="customer_identity">DNI del cliente</label><br/>
+<%= text_field 'customer', 'identity' %></p>
+<p><label for="customer_phone">Teléfono del cliente</label><br/>
+<%= text_field 'customer', 'phone' %></p>
+<p><label for="customer_direction">Dirección del cliente</label><br/>
+<%= text_field 'customer', 'direction' %></p>
+<p><label for="customer_postal_code">Codigo Postal del cliente</label><br/>
+<%= text_field 'customer', 'postal_code' %></p>
+<p><label for="customer_city">Ciudad del cliente</label><br/>
+<%= text_field 'customer', 'city' %></p>
