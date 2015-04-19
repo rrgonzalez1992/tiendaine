@@ -1,5 +1,14 @@
 class Item < ActiveRecord::Base
-	validates_presence_of :name, :description, :imagepath, :price, :weight, :dimensions, :id_manufacturer
+	belongs_to :manufacturer
+
+	
+	validates_length_of :name, :in => 1..255
+	validates_length_of :description, :in => 1..255
+	validates_length_of :dimensions, :in => 1..255
+	validates_length_of :type, :in =>1..255
+	validates_presence_of :weight
+	validates_presence_of :price
+	validates_presence_of :manufacturer
 end
 
 def name
@@ -8,10 +17,6 @@ end
 
 def description
 	"#{description}"
-end
-
-def imagepath
-	"#{imagepath}"
 end
 
 def price

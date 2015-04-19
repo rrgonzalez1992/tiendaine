@@ -1,5 +1,6 @@
 class Admin::ItemController < ApplicationController
   def new
+    load_data
    @item = Item.new
    @page_title = 'Crear nuevo fabricante'
   end
@@ -24,7 +25,7 @@ class Admin::ItemController < ApplicationController
      @item = Item.find(params[:id])
     if @item.update_attributes(item_params)
       flash[:notice] = "El articulo #{@item.name} ha sido actualizado."
-      redirect_to :action => 'show', :id => @manufacturer
+      redirect_to :action => 'show', :id => @item
     else
       @page_title = 'Editar articulo'
       render :action => 'edit'
@@ -40,15 +41,24 @@ class Admin::ItemController < ApplicationController
 
   def show
     @item = Item.find(params[:id])
-    @page_title = @item.name 
+    @page_title = @item.name
   end
 
+  def choosetype
+    @item = Item.new
+    load_data
+    @type = params[:itemtype]
+  end
   def index
      @items = Item.all
     @page_title = 'Listado de fabricante'
+  end
   private
-    def manufacturer_params
-      params.require(:item).permit(:name, :description, :imagepath, :price, :weight, :dimensions, :id_manufacturer)
+  def load_data
+    @manufacturers = Manufacturer.all
+  end
+    def item_params
+      params.require(:item).permit(:name, :description, :price, :weight, :dimensions, :id_manufacturer)
     end
 
 end

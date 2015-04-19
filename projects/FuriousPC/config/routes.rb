@@ -28,6 +28,11 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
+  get 'item/choosetype'
+  post 'item/choosetype'
+  end
+
+  namespace :admin do
   get 'customer/new'
   end
 

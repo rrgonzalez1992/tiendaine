@@ -26,13 +26,13 @@ ActiveRecord::Schema.define(version: 20150413170018) do
   end
 
   create_table "items", force: true do |t|
-    t.string   "name"
-    t.string   "description"
-    t.string   "imagepath"
-    t.string   "price"
-    t.string   "weight"
-    t.string   "dimensions"
-    t.integer  "id_manufacturer"
+    t.string   "name",                                     null: false
+    t.string   "description",                              null: false
+    t.string   "type",                                     null: false
+    t.decimal  "price",           precision: 10, scale: 0, null: false
+    t.decimal  "weight",          precision: 10, scale: 0, null: false
+    t.string   "dimensions",                               null: false
+    t.integer  "id_manufacturer",                          null: false
     t.string   "socket"
     t.string   "TDP"
     t.integer  "number_cores"
@@ -43,6 +43,8 @@ ActiveRecord::Schema.define(version: 20150413170018) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "items", ["id_manufacturer"], name: "fk_item_manufacturer", using: :btree
 
   create_table "manufacturers", force: true do |t|
     t.string   "name"

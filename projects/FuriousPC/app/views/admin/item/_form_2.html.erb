@@ -1,0 +1,27 @@
+<% print "HOLA" %>
+<div class="field">
+<label for="name">Nombre del articulo</label>
+ <%= text_field 'item', 'name' %></p>
+ </div>
+ <div class="field">
+ <label for="description">Descripcion del articulo</label>
+ <%= text_area 'item', 'description' %></p>
+ </div>
+ <div class="field">
+ <label for="price">Precio del articulo</label>
+ <%= number_field 'item', 'price' %></p>
+ </div>
+ <div class="field">
+ <label for="weight">Peso del articulo</label>
+ <%= number_field 'item', 'weight' %></p>
+ </div>
+ <div class="field">
+ <label for="dimensions">Dimensiones del articulo</label>
+ <%= text_field 'item', 'dimensions' %></p>
+ </div>
+ <% print "CARGADO pre manufacturer" %>
+ <div class="field">
+ <label for="manufacturer">Fabricante del articulo</label>
+<%= collection_select :item, :id_manufacturer, @manufacturers, :id, :name %></p>
+ </div>
+ <% print "CARGADO" %>
