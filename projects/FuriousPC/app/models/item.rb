@@ -19,6 +19,10 @@ def description
 	"#{description}"
 end
 
+def imagepath
+	"#{imagepath}"
+end
+
 def price
 	"#{price}"
 end
@@ -55,6 +59,18 @@ def video_memory
 	"#{video_memory}"
 end
 
+def pci_version
+	"#{pci_version}"
+end
+
+def chipset
+	"#{chipset}"
+end
+
 def watts
 	"#{watts}"
+end
+
+def factor
+	"#{factor}"
 end

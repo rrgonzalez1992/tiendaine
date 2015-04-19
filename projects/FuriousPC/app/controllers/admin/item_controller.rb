@@ -2,7 +2,7 @@ class Admin::ItemController < ApplicationController
   def new
     load_data
    @item = Item.new
-   @page_title = 'Crear nuevo fabricante'
+   @page_title = 'Dar de alta nuevo componente'
   end
 
   def create
@@ -51,14 +51,14 @@ class Admin::ItemController < ApplicationController
   end
   def index
      @items = Item.all
-    @page_title = 'Listado de fabricante'
+    @page_title = 'Listado de componentes'
   end
   private
   def load_data
     @manufacturers = Manufacturer.all
   end
     def item_params
-      params.require(:item).permit(:name, :description, :price, :weight, :dimensions, :id_manufacturer)
+      params.require(:item).permit(:name, :description, :imagepath, :price, :weight, :dimensions, :id_manufacturer)
     end
 
 end

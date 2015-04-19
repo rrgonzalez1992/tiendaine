@@ -13,7 +13,7 @@ amdFX:
   price: '150€'
   weight: '0.7502kg'
   dimensions: '20x20x20 cm'
-  id_facturer: 2
+  id_manufacturer: 2
   socket: 'AM3+'
   TDP: '150W'
   number_cores: 8
@@ -28,9 +28,9 @@ nVidia980:
   price: '350€'
   weight: '1.20kg'
   dimensions: '50x20x40 cm'
-  id_facturer: 1
+  id_manufacturer: 1
   TDP: '220W'
   core_frequency: 1
   video_memory:  3
   pci_version: 'PCI-e 3.0 x16'
-  watt: 200
+  watts: 200
