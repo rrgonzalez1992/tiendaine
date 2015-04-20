@@ -1,6 +1,6 @@
 <tr>
   <td><%= link_to manufacturer.name, :action => 'show', :id => manufacturer %></td>
-  <td><%= button_to 'Editar', {:action => 'edit', :id => manufacturer  }%></td>
+  <td><%= link_to '<button>Editar</button>, :action => 'edit', :id => manufacturer %></td>
   <td>
     <%= button_to 'Borrar', { :action => 'destroy', :id => manufacturer },
         data: { confirm: "Estás seguro de querer borrar #{manufacturer.name}?" } %>   

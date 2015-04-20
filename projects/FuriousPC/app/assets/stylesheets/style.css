@@ -46,6 +46,7 @@ background-color: silver;
 margin-left:850px;
 position:relative;
 margin-top: -170px;
+display: none;
 }
 #errorExplanation {
   width: 400px;
@@ -218,7 +219,7 @@ padding-bottom: 15px;
 }
 
 table {
-  margin-left: 5% !important;
+  margin-left: 40% !important;
   border-collapse: collapse !important;
 }
 
