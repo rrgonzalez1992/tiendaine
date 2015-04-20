@@ -1,5 +1,25 @@
 Rails.application.routes.draw do
   namespace :admin do
+  get 'providers/new'
+  end
+
+  namespace :admin do
+  get 'providers/create'
+  end
+
+  namespace :admin do
+  get 'providers/index'
+  end
+
+  namespace :admin do
+  get 'providers/show'
+  end
+
+  namespace :admin do
+  get 'providers/destroy'
+  end
+
+  namespace :admin do
   get 'item/new'
   end
 

@@ -29,7 +29,7 @@ class ItemTest < ActiveSupport::TestCase
   	item = Item.new(
   		:name => 'Test creacion procesador',
         :description => 'Es un procesador de test',
-        :tipo => 'Processor'
+        :tipo => 'Processor',
         :price => '800€',
         :weight => '1kg',
         :dimensions => '1x1x1cm',
