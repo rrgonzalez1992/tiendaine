@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(version: 20150413170018) do
     t.string   "name",                                     null: false
     t.string   "description",                              null: false
     t.string   "type",                                     null: false
-    t.string   "imagepath"
     t.decimal  "price",           precision: 10, scale: 0, null: false
     t.decimal  "weight",          precision: 10, scale: 0, null: false
     t.string   "dimensions",                               null: false
