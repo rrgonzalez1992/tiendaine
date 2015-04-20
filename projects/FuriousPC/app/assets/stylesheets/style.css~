@@ -222,6 +222,10 @@ table {
   border-collapse: collapse !important;
 }
 
+.table p{
+  text-align:center;
+}
+
 th,td {
   width: 25% !important;
   text-align: left !important;
