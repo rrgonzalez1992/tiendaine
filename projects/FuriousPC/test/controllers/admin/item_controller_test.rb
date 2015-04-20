@@ -14,7 +14,6 @@ class Admin::ItemControllerTest < ActionController::TestCase
         :type => 'Processor',
         :name => 'Procesador Prueba',
         :description => 'Es un procesador random',
-        :imagepath => 'jnbjdhbsd',
         :price => '800€',
         :weight => '1kg',
         :dimensions => '1x1x1cm',
@@ -38,7 +37,6 @@ class Admin::ItemControllerTest < ActionController::TestCase
         :type => 'Mobo',
         :name => 'Placa Base Prueba',
         :description => 'Es una placa base para un procesador random',
-        :imagepath => 'jnbjdhbsd',
         :price => '200€',
         :weight => '1kg',
         :dimensions => '1x1x1cm',
@@ -61,7 +59,6 @@ class Admin::ItemControllerTest < ActionController::TestCase
         :type => 'GPU',
         :name => 'Tarjeta grafica Prueba',
         :description => 'Es una tarjeta grafica random',
-        :imagepath => 'jnbjdhbsd',
         :price => '110€',
         :weight => '1kg',
         :dimensions => '1x1x1cm',
@@ -85,7 +82,6 @@ class Admin::ItemControllerTest < ActionController::TestCase
         :type => 'PSU',
         :name => 'Fuente de alimentacion Prueba',
         :description => 'Es una fuente de alimentacion random',
-        :imagepath => 'jnbjdhbsd',
         :price => '110€',
         :weight => '1kg',
         :dimensions => '1x1x1cm',
@@ -103,7 +99,6 @@ class Admin::ItemControllerTest < ActionController::TestCase
     get :edit, :id => 1
     assert_tag :tag => 'input', :attributes => {:name => 'item[name]', :value => 'AMD FX-8350'}
     assert_tag :tag => 'input', :attributes => {:name => 'item[description]', :value => 'For advanced gaming and multimedia experience AMD brings his new eight-core processor overclockeable'}
-    assert_tag :tag => 'input', :attributes => {:name => 'item[imagepath]', :value => 'blabla'}
     assert_tag :tag => 'input', :attributes => {:name => 'item[price]', :value => '150€'}
     assert_tag :tag => 'input', :attributes => {:name => 'item[weight]', :value => '0.7502kg'}
     assert_tag :tag => 'input', :attributes => {:name => 'item[dimensions]', :value => '20x20x20 cm'}
@@ -128,7 +123,6 @@ class Admin::ItemControllerTest < ActionController::TestCase
         :type => 'PSU',
         :name => 'PSU antes CPU',
         :description => 'Es una fuente de alimentacion random',
-        :imagepath => 'jnbjdhbsd',
         :price => '99€',
         :weight => '1kg',
         :dimensions => '1x1x1cm',
@@ -147,7 +141,6 @@ class Admin::ItemControllerTest < ActionController::TestCase
     assert_equal 'PSU', Item.find(1).type
     assert_equal 'PSU antes CPU', Item.find(1).name
     assert_equal 'Es una fuente de alimentacion random', Item.find(1).description
-    assert_equal 'jnbjdhbsd', Item.find(1).imagepath
     assert_equal '99€', Item.find(1).price
     assert_equal '1kg', Item.find(1).weight
     assert_equal '1x1x1cm', Item.find(1).dimensions

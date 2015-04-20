@@ -1,91 +1,91 @@
 <div class="field">
-<label for="name">Nombre del articulo</label>
+<p><label for="name">Nombre del articulo</label>
  <%= text_field 'item', 'name' %></p>
  </div>
  <div class="field">
- <label for="description">Descripcion del articulo</label>
+ <p><label for="description">Descripcion del articulo</label>
  <%= text_area 'item', 'description' %></p>
  </div>
  <div class="field">
- <label for="price">Precio del articulo</label>
+ <p><label for="price">Precio del articulo</label>
  <%= number_field 'item', 'price' %></p>
  </div>
  <div class="field">
- <label for="weight">Peso del articulo</label>
+ <p><label for="weight">Peso del articulo</label>
  <%= number_field 'item', 'weight' %></p>
  </div>
  <div class="field">
- <label for="dimensions">Dimensiones del articulo</label>
+ <p><label for="dimensions">Dimensiones del articulo</label>
  <%= text_field 'item', 'dimensions' %></p>
  </div>
  <% print "CARGADO pre manufacturer" %>
  <div class="field">
- <label for="manufacturer">Fabricante del articulo</label>
+ <p><label for="manufacturer">Fabricante del articulo</label>
 <%= collection_select :item, :id_manufacturer, @manufacturers, :id, :name %></p>
  </div>
  <div class="field">
 	<% if params[:itemtype] == 'procesador' %>
-			<label for="core">Nucleos </label>
+			<p><label for="core">Nucleos </label>
 			<%= number_field 'item', 'number_cores' %></p>
 		</div>
 		<div class="field">
-			<label for="freq">Velocidad de procesador </label>
+			<p><label for="freq">Velocidad de procesador </label>
 			<%= number_field 'item', 'core_frequency' %></p>
 		</div>
 		<div class="field">
-			<label for="socket">Socket </label>
+			<p><label for="socket">Socket </label>
 			<%= text_field 'item', 'socket' %></p>
 		</div>
 		<div class="field">
-			<label for="tdp">Potencia de diseño termico </label>
+			<p><label for="tdp">Potencia de diseño termico </label>
 			<%= text_field 'item', 'TDP' %></p>
 		</div>
 		<div class="field">
-			<label for="watt">Consumo energetico </label>
+			<p><label for="watt">Consumo energetico </label>
 			<%= number_field 'item', 'watts' %></p>
 		</div>
 	<% elsif params[:itemtype] == 'placabase'%>
-			<label for="socket">Socket compatible </label>
+			<p><label for="socket">Socket compatible </label>
 			<%= text_field 'item', 'socket' %></p>
 		</div>
 		<div class="field">
-			<label for="pcie">Version del slot PCI-e </label>
+			<p><label for="pcie">Version del slot PCI-e </label>
 			<%= text_field 'item', 'pci_version' %></p>
 		</div>
 		<div class="field">
-			<label for="chipset">Chipset </label>
+			<p><label for="chipset">Chipset </label>
 			<%= text_field 'item', 'chipset' %></p>
 		</div>
 		<div class="field">
-			<label for="factor">Factor de forma </label>
+			<p><label for="factor">Factor de forma </label>
 			<%= text_field 'item', 'factor' %></p>
 		</div>
 	<% elsif params[:itemtype] == 'grafica'%>
-			<label for="pcie">Version de PCI-e </label>
+			<p><label for="pcie">Version de PCI-e </label>
 			<%= text_field 'item', 'pci_version' %></p>
 		</div>
 		<div class="field">
-			<label for="freq">Velocidad de procesador </label>
+			<p><label for="freq">Velocidad de procesador </label>
 			<%= number_field 'item', 'core_frequency' %></p>
 		</div>
 		<div class="field">
-			<label for="video_memory">Memoria de video </label>
+			<p><label for="video_memory">Memoria de video </label>
 			<%= number_field 'item', 'video_memory' %></p>
 		</div>
 		<div class="field">
-			<label for="tdp">Potencia de diseño termico </label>
+			<p><label for="tdp">Potencia de diseño termico </label>
 			<%= text_field 'item', 'TDP' %></p>
 		</div>
 		<div class="field">
-			<label for="watt">Consumo energetico </label>
+			<p><label for="watt">Consumo energetico </label>
 			<%= number_field 'item', 'watts' %></p>
 		</div>
 	<% elsif params[:itemtype] == 'psu'%>
-			<label for="tdp">Potencia diseño termico</label>
+			<p><label for="tdp">Potencia diseño termico</label>
 			<%= number_field 'item', 'TDP' %></p>
 		</div>
 		<div class="field">
-			<label for="watt">Consumo energetico </label>
+			<p><label for="watt">Consumo energetico </label>
 			<%= text_field 'item', 'watts' %></p>
 		</div>
 	<% end %>
