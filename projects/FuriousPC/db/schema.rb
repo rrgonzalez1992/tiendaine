@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20150413170018) do
     t.integer  "core_frequency"
     t.string   "factor"
     t.integer  "video_memory"
+    t.string   "pci_version"
     t.integer  "watts"
     t.datetime "created_at"
     t.datetime "updated_at"
