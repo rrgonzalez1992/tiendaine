@@ -14,7 +14,7 @@ class CreateItems < ActiveRecord::Migration
       t.integer :core_frequency, :null => true
       t.string :factor, :limit => 255, :null => true
       t.integer :video_memory, :null => true
-      t.string :pci_version, :limit => 255, :null => false
+      t.string :pci_version, :limit => 255, :null => true
       t.integer :watts, :null => true
       t.timestamps
     end

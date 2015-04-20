@@ -6,6 +6,7 @@ class Item < ActiveRecord::Base
 	validates_length_of :description, :in => 1..255
 	validates_length_of :dimensions, :in => 1..255
 	validates_length_of :type, :in =>1..255
+	validates_length_of :pci_version, :in =>1..255
 	validates_presence_of :weight
 	validates_presence_of :price
 	validates_presence_of :id_manufacturer
