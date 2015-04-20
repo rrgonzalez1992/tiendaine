@@ -3,7 +3,7 @@ class CreateItems < ActiveRecord::Migration
     create_table :items do |t|
       t.string :name, :limit => 255, :null => false
       t.string :description, :limit => 255, :null => false
-      t.string :type, :limit => 255, :null => false
+      t.string :tipo, :limit => 255, :null => false
       t.decimal :price, :null => false
       t.decimal :weight, :null => false
       t.string :dimensions, :limit => 255, :null => false

@@ -9,9 +9,9 @@ class Admin::ItemControllerTest < ActionController::TestCase
 
   test "createPROCESSOR" do
     # Crea un PROCESADOR
-    num_items = item.count
+    num_items = Item.count
     post :create, :item => {
-        :type => 'Processor',
+        :tipo => 'Processor',
         :name => 'Procesador Prueba',
         :description => 'Es un procesador random',
         :price => '800€',
@@ -32,9 +32,9 @@ class Admin::ItemControllerTest < ActionController::TestCase
 
   test "createMOBO" do
     # Crea una PLACA BASE
-    num_items = item.count
+    num_items = Item.count
     post :create, :item => {
-        :type => 'Mobo',
+        :tipo => 'Mobo',
         :name => 'Placa Base Prueba',
         :description => 'Es una placa base para un procesador random',
         :price => '200€',
@@ -54,9 +54,9 @@ class Admin::ItemControllerTest < ActionController::TestCase
 
   test "createGPU" do
     # Crea una TARJETA GRAFICA
-    num_items = item.count
+    num_items = Item.count
     post :create, :item => {
-        :type => 'GPU',
+        :tipo => 'GPU',
         :name => 'Tarjeta grafica Prueba',
         :description => 'Es una tarjeta grafica random',
         :price => '110€',
@@ -77,9 +77,9 @@ class Admin::ItemControllerTest < ActionController::TestCase
 
   test "createPSU" do
     # Crea una FUENTE DE ALIMENTACION
-    num_items = item.count
+    num_items = Item.count
     post :create, :item => {
-        :type => 'PSU',
+        :tipo => 'PSU',
         :name => 'Fuente de alimentacion Prueba',
         :description => 'Es una fuente de alimentacion random',
         :price => '110€',
@@ -87,7 +87,6 @@ class Admin::ItemControllerTest < ActionController::TestCase
         :dimensions => '1x1x1cm',
         :id_manufacturer => 2,
         :TDP => '50W',
-        :watts => 100
         }
         
         assert_response :redirect
@@ -104,10 +103,10 @@ class Admin::ItemControllerTest < ActionController::TestCase
     assert_tag :tag => 'input', :attributes => {:name => 'item[dimensions]', :value => '20x20x20 cm'}
     assert_tag :tag => 'input', :attributes => {:name => 'item[id_manufacturer]', :value => 2}
 
-    # Primero se comprueban en linea los datos generales. A continuacion, segun type (if type....) se
+    # Primero se comprueban en linea los datos generales. A continuacion, segun tipo (if tipo....) se
     # discriminan los que deben aparecer como vacios y los que no
     
-    assert_tag :tag => 'input', :attributes => {:name => 'item[type]', :value => 'Processor'}
+    assert_tag :tag => 'input', :attributes => {:name => 'item[tipo]', :value => 'Processor'}
     assert_tag :tag => 'input', :attributes => {:name => 'item[socket]', :value => 'AM3+'}
     assert_tag :tag => 'input', :attributes => {:name => 'item[TDP]', :value => '150W'}
     assert_tag :tag => 'input', :attributes => {:name => 'item[number_cores]', :value => 8}
@@ -120,51 +119,41 @@ class Admin::ItemControllerTest < ActionController::TestCase
 
   test "update" do
     post :update, :id => 1, :item => {
-        :type => 'PSU',
-        :name => 'PSU antes CPU',
-        :description => 'Es una fuente de alimentacion random',
-        :price => '99€',
+        :name => 'Test Processor',
+        :description => 'Es un procesador random',
+        :price => '800€',
         :weight => '1kg',
         :dimensions => '1x1x1cm',
         :id_manufacturer => 2,
+        :socket => 'FM3',
         :TDP => '50W',
-        :watts => 100,
-        :number_cores => null,
-        :core_frequency => null,
-        :video_memory => null,
-        :factor => '',
-        :pci_version => '',
-        :chipset => '',
+        :number_cores => 4,
+        :core_frequency => 2
         }
     assert_response :redirect
     assert_redirected_to :action => 'show', :id => 1
-    assert_equal 'PSU', Item.find(1).type
-    assert_equal 'PSU antes CPU', Item.find(1).name
-    assert_equal 'Es una fuente de alimentacion random', Item.find(1).description
-    assert_equal '99€', Item.find(1).price
+    assert_equal 'Test Processor', Item.find(1).name
+    assert_equal 'Es un procesador random', Item.find(1).description
+    assert_equal '800€', Item.find(1).price
     assert_equal '1kg', Item.find(1).weight
     assert_equal '1x1x1cm', Item.find(1).dimensions
     assert_equal 2, Item.find(1).id_manufacturer
     assert_equal '50W', Item.find(1).TDP
-    assert_equal 100, Item.find(1).watts
-    assert_equal null, Item.find(1).video_memory
-    assert_equal null, Item.find(1).number_cores
-    assert_equal null, Item.find(1).core_frequency
-    assert_equal '', Item.find(1).factor
-    assert_equal '', Item.find(1).pci_version
-    assert_equal '', Item.find(1).chipset
+    assert_equal 4, Item.find(1).number_cores
+    assert_equal 2, Item.find(1).core_frequency
+    assert_equal 'FM3', Item.find(1).socket
   end
 
   test "destroy" do
-    assert_difference(item, :count, -1) do
+    assert_difference(Item, :count, -1) do
       post :destroy, :id => 1
-      assert_equal flash[:notice], 'Se ha borrado el articulo PSU antes CPU.'
+      assert_equal flash[:notice], 'Se ha borrado el articulo AMD FX-8350.'
       assert_response :redirect
       assert_redirected_to :action => 'index'
       get :index
       assert_response :success
       assert_tag :tag => 'div', :attributes => {:id => 'notice'},
-                 :content => 'Se ha borrado el articulo PSU antes CPU.'
+                 :content => 'Se ha borrado el articulo AMD FX-8350.'
     end
   end
 

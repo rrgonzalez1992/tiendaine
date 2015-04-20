@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20150413170018) do
   create_table "items", force: true do |t|
     t.string   "name",                                     null: false
     t.string   "description",                              null: false
-    t.string   "type",                                     null: false
+    t.string   "tipo",                                     null: false
     t.decimal  "price",           precision: 10, scale: 0, null: false
     t.decimal  "weight",          precision: 10, scale: 0, null: false
     t.string   "dimensions",                               null: false

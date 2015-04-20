@@ -47,7 +47,7 @@ class Admin::ItemController < ApplicationController
   def choosetype
     @item = Item.new
     load_data
-    @type = params[:itemtype]
+    @tipo = params[:itemtype]
   end
   def index
      @items = Item.all
@@ -58,7 +58,7 @@ class Admin::ItemController < ApplicationController
     @manufacturers = Manufacturer.all
   end
     def item_params
-      params.require(:item).permit(:name, :description, :imagepath, :price, :weight, :dimensions, :id_manufacturer)
+      params.require(:item).permit(:name, :description, :price, :weight, :dimensions, :id_manufacturer)
     end
 
 end
