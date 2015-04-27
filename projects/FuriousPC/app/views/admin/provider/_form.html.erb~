@@ -11,7 +11,7 @@
 <% end %>
 
 
-<fieldset style="width:0%;margin-left: 38%;">
+<fieldset style="width:0%;margin-left: 40%;">
 	
 	<p><label for="provider_name">Nombre del proveedor</label><br/>
 	<%= text_field 'provider', 'name' %></p>

@@ -12,7 +12,7 @@
 	
 <div class="field" style="width: 97%;">
 <p><label for="name">Nombre del artículo</label><br/>
- <%= text_field 'item', 'name' %></p>
+ <%= text_field :size=>"50", 'item', 'name' %></p>
  </div>
  <div class="field">
  <p><label for="description">Descripción del artículo</label><br/>

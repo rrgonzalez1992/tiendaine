@@ -12,7 +12,6 @@ span{
 }
 
 
-
 body {
   background-color: #eee; 
   color: #333;
@@ -207,6 +206,7 @@ padding-bottom: 15px;
 
 #checkout fieldset input {
   margin: 1px;
+
 }
 
 #order_card_verification_value {
@@ -218,7 +218,7 @@ padding-bottom: 15px;
 }
 
 table {
-  margin-left: 5% !important;
+  margin-left: 40% !important;
   border-collapse: collapse !important;
 }
 
@@ -244,4 +244,8 @@ caption{
 
 th {
   background: #eee;
+}
+
+h1{
+    text-align: center;
 }

@@ -11,7 +11,9 @@ span{
   text-transform:uppercase;
 }
 
-
+#tablaitem{
+margin-left: 20px !important;
+}
 
 body {
   background-color: #eee; 
@@ -207,6 +209,7 @@ padding-bottom: 15px;
 
 #checkout fieldset input {
   margin: 1px;
+
 }
 
 #order_card_verification_value {
@@ -244,4 +247,8 @@ caption{
 
 th {
   background: #eee;
+}
+
+h1{
+    text-align: center;
 }

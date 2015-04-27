@@ -1,0 +1,6 @@
+<div style="margin-left: 50px;">
+<%= form_tag :action => 'create' %>
+<%= render :partial => 'form' %>
+<div style="margin-left: 47%;"><%= submit_tag 'Crear' %></div>
+</form>
+<div style="margin-left: 47%;"><%= link_to 'Volver atrás', :action => 'index' %></div></div>

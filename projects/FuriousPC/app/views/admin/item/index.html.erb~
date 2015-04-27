@@ -1,4 +1,4 @@
-<table>
+<table style="margin-left: 20px !important;">
   <tr>
     <th><a href="?sort_by=manufacturer_id">Fabricante</a></th>
     <th><a href="?sort_by=name">Nombre</a></th>
@@ -20,4 +20,4 @@
 <%= will_paginate @items, :page_links => false, :link_separator => ' | ',
                           :previous_label => 'Previous page', :next_label => 'Next page' %>
 <p style="margin-left: 45%;"><%= link_to 'Añadir un nuevo componente', :action => 'new' %></p>
-<div style="margin-left: 45%;"><%= image_tag "item.png", :alt => "Componente", :title => "Componente" ,  :width => 30 %></div>
+<div style="margin-left: 50%;"><%= image_tag "item.png", :alt => "Componente", :title => "Componente" ,  :width => 30 %></div>
