@@ -1,0 +1,17 @@
+ #
+ amdFX:
+   id: 1
+-  type: 'Processor'
++  tipo: 'Processor'
+   name: 'AMD FX-8350'
+   description: 'For advanced gaming and multimedia experience AMD brings his new eight-core processor overclockeable'
+   price: '150€'
+@@ -20,7 +20,7 @@ amdFX:
+ 
+ nVidia980:
+   id: 2
+-  type: 'GPU'
++  tipo: 'GPU'
+   name: 'nVidia GTX 980'
+   description: 'Discover a brand new way of gaming thanks to its extreme overclock'
+   price: '350€'
