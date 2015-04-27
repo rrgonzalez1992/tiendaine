@@ -1,0 +1,12 @@
+<dl id = 'items'>
+  <% for item in @items %>
+    <dt>
+      <%= link_to item.name, :action => 'show', :id => item %>
+    </dt>
+    <% for provider in item.providers %>
+      <dd><%= provider.name %></dd>
+    <% end %>
+    <dd><%= sprintf("Price: %.2f €", item.price) %> </dd>
+    <dd><small>Fabricante: <%= item.manufacturer.name %></small></dd>
+  <% end %>
+</dl>

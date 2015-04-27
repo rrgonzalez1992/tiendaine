@@ -11,82 +11,16 @@ class Admin::ItemControllerTest < ActionController::TestCase
     # Crea un PROCESADOR
     num_items = Item.count
     post :create, :item => {
-        :tipo => 'Processor',
         :name => 'Procesador Prueba',
         :description => 'Es un procesador random',
         :price => '800€',
         :weight => '1kg',
         :dimensions => '1x1x1cm',
-        :id_manufacturer => 2,
+        :manufacturer_id => 2,
         :socket => 'FM3',
         :TDP => '50W',
         :number_cores => 4,
         :core_frequency => 2
-        }
-        
-        assert_response :redirect
-        assert_redirected_to :action => 'index'
-        assert_equal num_items + 1, item.count
-  end
-
-
-  test "createMOBO" do
-    # Crea una PLACA BASE
-    num_items = Item.count
-    post :create, :item => {
-        :tipo => 'Mobo',
-        :name => 'Placa Base Prueba',
-        :description => 'Es una placa base para un procesador random',
-        :price => '200€',
-        :weight => '1kg',
-        :dimensions => '1x1x1cm',
-        :id_manufacturer => 1,
-        :socket => 'FM3',
-        :factor => 'mATX',
-        :pci_version => 'PCI-e 2',
-        :chipset => '990X'
-        }
-        
-        assert_response :redirect
-        assert_redirected_to :action => 'index'
-        assert_equal num_items + 1, item.count
-  end
-
-  test "createGPU" do
-    # Crea una TARJETA GRAFICA
-    num_items = Item.count
-    post :create, :item => {
-        :tipo => 'GPU',
-        :name => 'Tarjeta grafica Prueba',
-        :description => 'Es una tarjeta grafica random',
-        :price => '110€',
-        :weight => '1kg',
-        :dimensions => '1x1x1cm',
-        :id_manufacturer => 1,
-        :TDP => '50W',
-        :core_frequency => 2,
-        :video_memory => 1,
-        :pci_version => 'Cualquiera',
-        :watts => 100
-        }
-        
-        assert_response :redirect
-        assert_redirected_to :action => 'index'
-        assert_equal num_items + 1, item.count
-  end
-
-  test "createPSU" do
-    # Crea una FUENTE DE ALIMENTACION
-    num_items = Item.count
-    post :create, :item => {
-        :tipo => 'PSU',
-        :name => 'Fuente de alimentacion Prueba',
-        :description => 'Es una fuente de alimentacion random',
-        :price => '110€',
-        :weight => '1kg',
-        :dimensions => '1x1x1cm',
-        :id_manufacturer => 2,
-        :TDP => '50W',
         }
         
         assert_response :redirect
@@ -101,12 +35,11 @@ class Admin::ItemControllerTest < ActionController::TestCase
     assert_tag :tag => 'input', :attributes => {:name => 'item[price]', :value => '150€'}
     assert_tag :tag => 'input', :attributes => {:name => 'item[weight]', :value => '0.7502kg'}
     assert_tag :tag => 'input', :attributes => {:name => 'item[dimensions]', :value => '20x20x20 cm'}
-    assert_tag :tag => 'input', :attributes => {:name => 'item[id_manufacturer]', :value => 2}
+    assert_tag :tag => 'input', :attributes => {:name => 'item[manufacturer_id]', :value => 2}
 
     # Primero se comprueban en linea los datos generales. A continuacion, segun tipo (if tipo....) se
     # discriminan los que deben aparecer como vacios y los que no
     
-    assert_tag :tag => 'input', :attributes => {:name => 'item[tipo]', :value => 'Processor'}
     assert_tag :tag => 'input', :attributes => {:name => 'item[socket]', :value => 'AM3+'}
     assert_tag :tag => 'input', :attributes => {:name => 'item[TDP]', :value => '150W'}
     assert_tag :tag => 'input', :attributes => {:name => 'item[number_cores]', :value => 8}
@@ -124,7 +57,7 @@ class Admin::ItemControllerTest < ActionController::TestCase
         :price => '800€',
         :weight => '1kg',
         :dimensions => '1x1x1cm',
-        :id_manufacturer => 2,
+        :manufacturer_id => 2,
         :socket => 'FM3',
         :TDP => '50W',
         :number_cores => 4,
@@ -137,7 +70,7 @@ class Admin::ItemControllerTest < ActionController::TestCase
     assert_equal '800€', Item.find(1).price
     assert_equal '1kg', Item.find(1).weight
     assert_equal '1x1x1cm', Item.find(1).dimensions
-    assert_equal 2, Item.find(1).id_manufacturer
+    assert_equal 2, Item.find(1).manufacturer_id
     assert_equal '50W', Item.find(1).TDP
     assert_equal 4, Item.find(1).number_cores
     assert_equal 2, Item.find(1).core_frequency

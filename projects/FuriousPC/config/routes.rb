@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'catalog/index'
+
+  get 'catalog/show'
+
+  get 'catalog/search'
+
+  get 'catalog/latest'
+
   namespace :admin do
   get 'provider/new'
   end

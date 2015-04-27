@@ -9,7 +9,6 @@ class ItemTest < ActiveSupport::TestCase
   	assert_equal false, item.save
 	assert item.errors[:name]
 	assert item.errors[:description]
-	assert item.errors[:tipo]
 	assert item.errors[:price]
 	assert item.errors[:weight]
 	assert item.errors[:dimensions]
