@@ -11,9 +11,28 @@ span{
   text-transform:uppercase;
 }
 
-#tablaitem{
-margin-left: 20px !important;
+#item_name{
+width:100%;
 }
+
+#item_description{
+width:97%;
+}
+
+#item_price{
+width:97%;
+}
+#item_weight{
+width:97%;
+}
+#item_dimensions{
+width:97%;
+}
+#item_description{
+width:97%;
+}
+
+
 
 body {
   background-color: #eee; 

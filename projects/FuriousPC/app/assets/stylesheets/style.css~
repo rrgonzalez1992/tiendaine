@@ -11,6 +11,28 @@ span{
   text-transform:uppercase;
 }
 
+#item_name{
+width:100%;
+}
+
+#item_description{
+width:97%;
+}
+
+#item_price{
+width:97%;
+}
+#item_description{
+width:97%;
+}
+#item_description{
+width:97%;
+}
+#item_description{
+width:97%;
+}
+
+
 
 body {
   background-color: #eee; 
