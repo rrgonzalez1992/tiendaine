@@ -1,0 +1,24 @@
+<% if @provider.errors.any? %>
+  <div id="errorExplanation">
+  <h2><%= pluralize(@provider.errors.count, "error") %> impide que se guarden sus modificaciones:</h2>
+    <ul>
+      <% @provider.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+
+<fieldset>
+	
+	<p><label for="provider_name">Nombre del proveedor</label><br/>
+	<%= text_field 'provider', 'name' %></p>
+	<p><label for="provider_tlf">Teléfono del proveedor</label><br/>
+	<%= text_field 'provider', 'tlf' %></p>
+	<p><label for="provider_tlf">Teléfono móvil del proveedor</label><br/>
+	<%= text_field 'provider', 'phone' %></p>
+	<p><label for="provider_direction">Dirección del proveedor</label><br/>
+	<%= text_field 'provider', 'direction' %></p>
+</fieldset>

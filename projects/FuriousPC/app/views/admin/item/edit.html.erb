@@ -1,2 +1,7 @@
-<h1>Admin::Item#edit</h1>
-<p>Find me in app/views/admin/item/edit.html.erb</p>
+<%= form_tag "/admin/item/update?id=#{@item.id}", :multipart => true do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Actualizar articulo' %>
+<% end %>
+
+<%= link_to 'Show', :action => 'show', :id => @item %> |
+<%= link_to 'Back', :action => 'index' %>

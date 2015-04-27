@@ -1,77 +1,30 @@
 class Item < ActiveRecord::Base
-	belongs_to :manufacturer
 	has_and_belongs_to_many :providers
+	belongs_to :manufacturer
 
-	
+	has_attached_file :cover_image
+	validates_attachment :cover_image, :content_type => { :content_type => ["image/jpeg", "image/gif", "image/png"] }
+
+
 	validates_length_of :name, :in => 1..255
 	validates_length_of :description, :in => 1..255
-	validates_length_of :dimensions, :in => 1..255
-	validates_length_of :tipo, :in =>1..255
-	validates_length_of :pci_version, :in =>1..255
-	validates_presence_of :weight
+	validates_presence_of :providers
+	validates_presence_of :manufacturer
 	validates_presence_of :price
-	validates_presence_of :id_manufacturer
-	validates_presence_of :tipo
-	validates_presence_of :name
-	validates_presence_of :description
-end
+	validates_presence_of :weight
+	validates_length_of :dimensions, :in => 1..255
+	validates_presence_of :number_cores
+	validates_presence_of :core_frequency
+	validates_length_of :socket, :in => 1..255
+	validates_length_of :TDP, :in => 1..255
+	validates_presence_of :watts
 
-def name
-	"#{name}"
-end
 
-def description
-	"#{description}"
-end
+  def provider_names
+    self.providers.map{|provider| provider.name}.join(", ")
+  end
 
-def price
-	"#{price}"
-end
-
-def weight
-	"#{weight}"
-end
-
-def dimensions
-	"#{dimensions}"
-end
-
-def id_manufacturer
-	"#{id_manufacturer}"
-end
-
-def socket
-	"#{socket}"
-end
-
-def TDP
-	"#{TDP}"
-end
-
-def number_cores
-	"#{number_cores}"
-end
-
-def core_frequency
-	"#{core_frequency}"
-end
-
-def video_memory
-	"#{video_memory}"
-end
-
-def pci_version
-	"#{pci_version}"
-end
-
-def chipset
-	"#{chipset}"
-end
-
-def watts
-	"#{watts}"
-end
-
-def factor
-	"#{factor}"
+  def self.latest(num)
+    all.order("items.id desc").includes(:providers, :manufacturer).limit(num)
+  end
 end

@@ -1,38 +1,52 @@
-Script iniciado (lun 20 abr 2015 12:12:01 CEST
-)]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ script/generate
-bash: script/generate: No existe el archivo o el directorio
-]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ -[Kbinscript/generatebin/rake db:migrate[10Prake testbin/rake db:migrate RAILS_ENV=devellopment [A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ rake test[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cils serverbin/rake db:migrate RAILS_ENV=devellopment [A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ [22Prails server
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pke test[4Pclearrake testils server[4Pgit pushcommit -m "Insercion de columnaa 'imagepath' en tabla 'items'" [A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ [C[C[C[Cadd .[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd FuriousPC/[1Pprojects/tiendaine/[5Pgit pushcommit -m "Finalizado formulariio de insercion de item. Terminado test de controlador de item"[Aadd .[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crake test[4Pclearrake test7[5Pclearrake testils serverbin/rake db:migrate RAILS_ENV=devellopment [A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ rails serverbin/rake db:migrate RAI[12@LS_ENV=devel[C[C[C[C[C[C[C[A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ [C[C[C[C[C[C[C[C[C[C[C[C[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cke[K start[K servercd FuriousPC/[5Pgit pull[3Pcd ..git pullcd FuriousPC/[1Pprojects/[4Pgit pull[3Pcd ..[1P..git pullls[Kcd projects/ls[Kcd tiendaine/ls[Krails serverbin/rake db:migrate RAILS_ENV=devellopment [A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ [22Prails server
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbundle install[6Prails -vsudo gem install json -v 1.8.2rails -v[Ksudo apt-get install ruby-devrails -v[Ksudo gem install json -v 1.8.2rails -v[Kbundle install[2Prails serverbin/rake db:migrate RAILS_ENV=devellopment [A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ [22Prails server
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbin/rake db:migrate RAILS_ENV=devellopment [A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ [22Prails server
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbin/rake db:migrate RAILS_ENV=devellopment [K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K
-Warning: Running `gem pristine --all` to regenerate your installed gemspecs (and deleting then reinstalling your bundle if you use bundle --path) will improve the startup performance of Spring.
-]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ bin/rake db:migrate[4Pscript/generatebin/rake db:migrate[10Prake testbin/rake db:migrate RAILS_ENV=devellopment [A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ rake test[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cils serverbin/rake db:migrate RAILS_ENV=devellopment [A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ [22Prails server
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pke test[4Pclearrake testils server[4Pgit pushcommit -m "Insercion de columnaa 'imagepath' en tabla 'items'" [A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ [C[C[C[Cadd .[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd FuriousPC/[1Pprojects/tiendaine/[5Pgit pushcommit -m "Finalizado formulariio de insercion de item. Terminado test de controlador de item"[Aadd .[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crake test[4Pclearrake test7[5Pclearrake testils serverbin/rake db:migrate RAILS_ENV=devellopment [A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ rails serverbin/rake db:migrate RAI[12@LS_ENV=devel[C[C[C[C[C[C[C[A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ [C[C[C[C[C[C[C[C[C[C[C[C[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cke[K start[K servercd FuriousPC/[5Pgit pull[3Pcd ..git pullcd FuriousPC/[1Pprojects/[4Pgit pull[3Pcd ..[1P..git pullls[Kcd projects/ls[Kcd tiendaine/ls[Krails serverbin/rake db:migrate RAILS_ENV=devellopment [A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ [22Prails server
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbundle install[6Prails -vsudo gem install json -v 1.8.2rails -v[Ksudo apt-get install ruby-dev[8Pgem install json -v 1.8.2[3P1.8.2rails -v[Ksudo gem install rails -v 4.1.1[1Premove[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@install[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crails -v[K[1Puby[C[C[Csudo rvm install 2.1.2[9Prvm use[C[C[C[C[C[C[4@install[C[C[C[C[C[Ccurl -L https://get.rvm.io | bash[8Psudo apt-get install curl[11Pbundle installsudo gem install rails -v 4.1.1[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crails -v[Kversion[6Puby -vsudo bundle installgem install json -v '1.8.2'[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo apt-get install ruby1.9.1-dev [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pgem install json -v '1.8.2'
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Capt-get install nodejs libmysqqlclient-dev [A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ [C[C[C[C[C[2Pgem install json -v '1.8.2'
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Psudo bundle install[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Prails serverbash --loginrails servercd FuriousPC/[1Prails serverbash --login
-]0;enrique@Shiva:/home/enrique/tiendaine/projects/FuriousPC]7;file://Shiva/home/enrique/tiendaine/projects/FuriousPC]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ rake db_[K:migrate
-]0;enrique@Shiva:/home/enrique/tiendaine/projects/FuriousPC]7;file://Shiva/home/enrique/tiendaine/projects/FuriousPC]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ add_column
-add_column: no se encontró la orden
-]0;enrique@Shiva:/home/enrique/tiendaine/projects/FuriousPC]7;file://Shiva/home/enrique/tiendaine/projects/FuriousPC]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ rails generate migration
-Warning: Running `gem pristine --all` to regenerate your installed gemspecs (and deleting then reinstalling your bundle if you use bundle --path) will improve the startup performance of Spring.
+Script iniciado (jue 23 abr 2015 10:02:52 CEST
+)]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ cd scer[K[Kri[K[K[K[K[K[K[Kmysql -u bdwiksco_adminn -p12qwaszx12QWASZX -h bdwiks.com[A]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ [10Prails server
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmysql -u bdwiksco_adminn -p12qwaszx12QWASZX -h bdwiks.com[A]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmysql -u bdwiksco_adminn -p12qwaszx12QWASZX -h bdwiks.com[A]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ [10Prails server
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd tiendaine/projects/FFuriousPC/[A]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ [C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C tiendaine/projects/FFuriousPC/[A]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ [10Prails server
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmysql -u bdwiksco_adminn -p12qwaszx12QWASZX -h bdwiks.com[A]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cconsole
+El programa «console» no está instalado. Puede instalarlo escribiendo:
+sudo apt-get install conserver-client
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ script
+script        scriptreplay  
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ script
+script        scriptreplay  
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ script/console
+bash: script/console: No existe el archivo o el directorio
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ rails pl[K[Kplugin install h ttp://opensvn.csie.org/rails_file_column/plugins/file_column/trunk/
+
 Usage:
-  rails generate migration NAME [field[:type][:index] field[:type][:index]] [options]
+  rails plugin new APP_PATH [options]
 
 Options:
-      [--skip-namespace], [--no-skip-namespace]  # Skip namespace (affects only isolated applications)
-  -o, --orm=NAME                                 # Orm to be invoked
-                                                 # Default: active_record
+  -r, [--ruby=PATH]                                      # Path to the Ruby binary of your choice
+                                                         # Default: /home/ramon/.rvm/rubies/ruby-2.1.2/bin/ruby
+  -m, [--template=TEMPLATE]                              # Path to some plugin template (can be a filesystem path or URL)
+      [--skip-gemfile], [--no-skip-gemfile]              # Don't create a Gemfile
+  -B, [--skip-bundle], [--no-skip-bundle]                # Don't run bundle install
+  -G, [--skip-git], [--no-skip-git]                      # Skip .gitignore file
+      [--skip-keeps], [--no-skip-keeps]                  # Skip source control .keep files
+  -O, [--skip-active-record], [--no-skip-active-record]  # Skip Active Record files
+  -V, [--skip-action-view], [--no-skip-action-view]      # Skip Action View files
+  -S, [--skip-sprockets], [--no-skip-sprockets]          # Skip Sprockets files
+      [--skip-spring], [--no-skip-spring]                # Don't install Spring application preloader
+  -d, [--database=DATABASE]                              # Preconfigure for selected database (options: mysql/oracle/postgresql/sqlite3/frontbase/ibm_db/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)
+                                                         # Default: sqlite3
+  -j, [--javascript=JAVASCRIPT]                          # Preconfigure for selected JavaScript library
+                                                         # Default: jquery
+  -J, [--skip-javascript], [--no-skip-javascript]        # Skip JavaScript files
+      [--dev], [--no-dev]                                # Setup the plugin with Gemfile pointing to your Rails checkout
+      [--edge], [--no-edge]                              # Setup the plugin with Gemfile pointing to Rails repository
+  -T, [--skip-test-unit], [--no-skip-test-unit]          # Skip Test::Unit files
+      [--rc=RC]                                          # Path to file containing extra configuration options for rails command
+      [--no-rc], [--no-no-rc]                            # Skip loading of extra configuration options from .railsrc file
+      [--dummy-path=DUMMY_PATH]                          # Create dummy application at given path
+                                                         # Default: test/dummy
+      [--full], [--no-full]                              # Generate a rails engine with bundled Rails application for testing
+      [--mountable], [--no-mountable]                    # Generate mountable isolated application
+      [--skip-gemspec], [--no-skip-gemspec]              # Skip gemspec file
+      [--skip-gemfile-entry], [--no-skip-gemfile-entry]  # If creating plugin in application's directory skip adding entry to Gemfile
 
 Runtime options:
   -f, [--force]                    # Overwrite files that already exist
@@ -40,316 +54,332 @@ Runtime options:
   -q, [--quiet], [--no-quiet]      # Suppress status output
   -s, [--skip], [--no-skip]        # Skip files that already exist
 
+Rails options:
+  -h, [--help], [--no-help]  # Show this help message and quit
+
 Description:
-    Stubs out a new database migration. Pass the migration name, either
-    CamelCased or under_scored, and an optional list of attribute pairs as arguments.
-
-    A migration class is generated in db/migrate prefixed by a timestamp of the current date and time.
-
-    You can name your migration in either of these formats to generate add/remove
-    column lines from supplied attributes: AddColumnsToTable or RemoveColumnsFromTable
+    The 'rails plugin new' command creates a skeleton for developing any
+    kind of Rails extension with ability to run tests using dummy Rails
+    application.
 
 Example:
-    `rails generate migration AddSslFlag`
+    rails plugin new ~/Code/Ruby/blog
 
-    If the current date is May 14, 2008 and the current time 09:09:12, this creates the AddSslFlag migration
-    db/migrate/20080514090912_add_ssl_flag.rb
+    This generates a skeletal Rails plugin in ~/Code/Ruby/blog.
+    See the README in the newly created plugin to get going.
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ 
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ rails console
+Loading development environment (Rails 4.1.1)
+2.1.2 :001 > ^C
+2.1.2 :001 > quit
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ rails consoleplugin install htttp://opensvn.csie.org/rails_file_column/plugins/file_column/trunk/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pconsole
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Krails console[Krails plugin install \ [A
+> http://opensvn.csie.org/rails_file_column/plugins/file_column/trunk/
+Usage:
+  rails plugin new APP_PATH [options]
 
-    `rails generate migration AddTitleBodyToPost title:string body:text published:boolean`
+Options:
+  -r, [--ruby=PATH]                                      # Path to the Ruby binary of your choice
+                                                         # Default: /home/ramon/.rvm/rubies/ruby-2.1.2/bin/ruby
+  -m, [--template=TEMPLATE]                              # Path to some plugin template (can be a filesystem path or URL)
+      [--skip-gemfile], [--no-skip-gemfile]              # Don't create a Gemfile
+  -B, [--skip-bundle], [--no-skip-bundle]                # Don't run bundle install
+  -G, [--skip-git], [--no-skip-git]                      # Skip .gitignore file
+      [--skip-keeps], [--no-skip-keeps]                  # Skip source control .keep files
+  -O, [--skip-active-record], [--no-skip-active-record]  # Skip Active Record files
+  -V, [--skip-action-view], [--no-skip-action-view]      # Skip Action View files
+  -S, [--skip-sprockets], [--no-skip-sprockets]          # Skip Sprockets files
+      [--skip-spring], [--no-skip-spring]                # Don't install Spring application preloader
+  -d, [--database=DATABASE]                              # Preconfigure for selected database (options: mysql/oracle/postgresql/sqlite3/frontbase/ibm_db/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)
+                                                         # Default: sqlite3
+  -j, [--javascript=JAVASCRIPT]                          # Preconfigure for selected JavaScript library
+                                                         # Default: jquery
+  -J, [--skip-javascript], [--no-skip-javascript]        # Skip JavaScript files
+      [--dev], [--no-dev]                                # Setup the plugin with Gemfile pointing to your Rails checkout
+      [--edge], [--no-edge]                              # Setup the plugin with Gemfile pointing to Rails repository
+  -T, [--skip-test-unit], [--no-skip-test-unit]          # Skip Test::Unit files
+      [--rc=RC]                                          # Path to file containing extra configuration options for rails command
+      [--no-rc], [--no-no-rc]                            # Skip loading of extra configuration options from .railsrc file
+      [--dummy-path=DUMMY_PATH]                          # Create dummy application at given path
+                                                         # Default: test/dummy
+      [--full], [--no-full]                              # Generate a rails engine with bundled Rails application for testing
+      [--mountable], [--no-mountable]                    # Generate mountable isolated application
+      [--skip-gemspec], [--no-skip-gemspec]              # Skip gemspec file
+      [--skip-gemfile-entry], [--no-skip-gemfile-entry]  # If creating plugin in application's directory skip adding entry to Gemfile
 
-    This will create the AddTitleBodyToPost in db/migrate/20080514090912_add_title_body_to_post.rb with this in the Change migration:
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
 
-      add_column :posts, :title, :string
-      add_column :posts, :body, :text
-      add_column :posts, :published, :boolean
+Rails options:
+  -h, [--help], [--no-help]  # Show this help message and quit
 
-Migration names containing JoinTable will generate join tables for use with
-has_and_belongs_to_many associations.
+Description:
+    The 'rails plugin new' command creates a skeleton for developing any
+    kind of Rails extension with ability to run tests using dummy Rails
+    application.
 
 Example:
-    `rails g migration CreateMediaJoinTable artists musics:uniq`
+    rails plugin new ~/Code/Ruby/blog
 
-    will create the migration
-
-    create_join_table :artists, :musics do |t|
-      # t.index [:artist_id, :music_id]
-      t.index [:music_id, :artist_id], unique: true
-    end
-]0;enrique@Shiva:/home/enrique/tiendaine/projects/FuriousPC]7;file://Shiva/home/enrique/tiendaine/projects/FuriousPC]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ rails generate migration CreateIte ms
-Warning: Running `gem pristine --all` to regenerate your installed gemspecs (and deleting then reinstalling your bundle if you use bundle --path) will improve the startup performance of Spring.
+    This generates a skeletal Rails plugin in ~/Code/Ruby/blog.
+    See the README in the newly created plugin to get going.
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ rails plugin new http: //opensvn.csie.org/rails_file_column/plugins/file_column/trunk/
+[1m[32m      create[0m  
+[1m[32m      create[0m  README.rdoc
+[1m[32m      create[0m  Rakefile
+[1m[32m      create[0m  trunk.gemspec
+[1m[32m      create[0m  MIT-LICENSE
+[1m[32m      create[0m  .gitignore
+[1m[32m      create[0m  Gemfile
+[1m[32m      create[0m  lib/trunk.rb
+[1m[32m      create[0m  lib/tasks/trunk_tasks.rake
+[1m[32m      create[0m  lib/trunk/version.rb
+[1m[32m      create[0m  test/test_helper.rb
+[1m[32m      create[0m  test/trunk_test.rb
+[1m[32m      append[0m  Rakefile
+[1m[32m  vendor_app[0m  test/dummy
+[1m[32m         run[0m  bundle install
+Fetching gem metadata from https://rubygems.org/...........
+Fetching version metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.2
+Installing minitest 5.6.0
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Installing activesupport 4.1.10
+Using builder 3.2.2
+Using erubis 2.7.0
+Installing actionview 4.1.10
+Using rack 1.5.2
+Using rack-test 0.6.3
+Installing actionpack 4.1.10
+Installing mime-types 2.4.3
+Installing mail 2.6.3
+Installing actionmailer 4.1.10
+Installing activemodel 4.1.10
+Using arel 5.0.1.20140414130214
+Installing activerecord 4.1.10
+Using bundler 1.9.2
+Using thor 0.19.1
+Installing railties 4.1.10
+Installing sprockets 3.0.2
+Using sprockets-rails 2.2.4
+Installing rails 4.1.10
+Installing sqlite3 1.3.10
+Using trunk 0.0.1 from source at .
+Bundle complete! 2 Gemfile dependencies, 27 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ dunl[K[K[K[Kbundle show 
+Gems included by the bundle:
+  * actionmailer (4.1.1)
+  * actionpack (4.1.1)
+  * actionview (4.1.1)
+  * activemodel (4.1.1)
+  * activerecord (4.1.1)
+  * activesupport (4.1.1)
+  * arel (5.0.1.20140414130214)
+  * builder (3.2.2)
+  * bundler (1.9.2)
+  * coffee-rails (4.0.1)
+  * coffee-script (2.3.0)
+  * coffee-script-source (1.9.1)
+  * erubis (2.7.0)
+  * execjs (2.4.0)
+  * hike (1.2.3)
+  * i18n (0.7.0)
+  * jbuilder (2.2.11)
+  * jquery-rails (3.1.2)
+  * json (1.8.2)
+  * mail (2.5.4)
+  * mime-types (1.25.1)
+  * minitest (5.5.1)
+  * multi_json (1.11.0)
+  * mysql2 (0.3.18)
+  * polyglot (0.3.5)
+  * rack (1.5.2)
+  * rack-test (0.6.3)
+  * rails (4.1.1)
+  * railties (4.1.1)
+  * rake (10.4.2)
+  * rdoc (4.2.0)
+  * sass (3.2.19)
+  * sass-rails (4.0.5)
+  * sdoc (0.4.1)
+  * spring (1.3.3)
+  * sprockets (2.12.3)
+  * sprockets-rails (2.2.4)
+  * thor (0.19.1)
+  * thread_safe (0.3.4)
+  * tilt (1.4.1)
+  * treetop (1.4.15)
+  * turbolinks (2.5.3)
+  * tzinfo (1.2.2)
+  * uglifier (2.7.1)
+  * will_paginate (3.0.5)
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ rails generate migrati on add_item_cover_cl[Kolumn
 [1m[37m      invoke[0m  active_record
-[1m[31m    conflict[0m    db/migrate/20150420101739_create_items.rb
-Another migration is already named create_items: /home/enrique/tiendaine/projects/FuriousPC/db/migrate/20150413170018_create_items.rb. Use --force to replace this migration file.
-]0;enrique@Shiva:/home/enrique/tiendaine/projects/FuriousPC]7;file://Shiva/home/enrique/tiendaine/projects/FuriousPC]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ rails upa[Kdate migration CreateItems [A
-Warning: Running `gem pristine --all` to regenerate your installed gemspecs (and deleting then reinstalling your bundle if you use bundle --path) will improve the startup performance of Spring.
-Error: Command 'update' not recognized
-Usage: rails COMMAND [ARGS]
-
-The most common rails commands are:
- generate    Generate new code (short-cut alias: "g")
- console     Start the Rails console (short-cut alias: "c")
- server      Start the Rails server (short-cut alias: "s")
- dbconsole   Start a console for the database specified in config/database.yml
-             (short-cut alias: "db")
- new         Create a new Rails application. "rails new my_app" creates a
-             new application called MyApp in "./my_app"
-
-In addition to those, there are:
- application  Generate the Rails application code
- destroy      Undo code generated with "generate" (short-cut alias: "d")
- plugin new   Generates skeleton for developing a Rails plugin
- runner       Run a piece of code in the application environment (short-cut alias: "r")
-
-All commands can be run with -h (or --help) for more information.
-]0;enrique@Shiva:/home/enrique/tiendaine/projects/FuriousPC]7;file://Shiva/home/enrique/tiendaine/projects/FuriousPC]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ rails update migration CreateItems [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgenerate migration CreateItemms --force
-Warning: Running `gem pristine --all` to regenerate your installed gemspecs (and deleting then reinstalling your bundle if you use bundle --path) will improve the startup performance of Spring.
-[1m[37m      invoke[0m  active_record
-[1m[32m      remove[0m    db/migrate/20150413170018_create_items.rb
-[1m[32m      create[0m    db/migrate/20150420101902_create_items.rb
-]0;enrique@Shiva:/home/enrique/tiendaine/projects/FuriousPC]7;file://Shiva/home/enrique/tiendaine/projects/FuriousPC]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ rails generate migration CreateItemms --force[A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ [C[C[C[C[C[Cupdate migration CreateItems [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgenerate migration CreateItemms[A]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Padd_column[K[K[K[K[K[K[K[K[K[Krake db_:[K[K:migrate
-]0;enrique@Shiva:/home/enrique/tiendaine/projects/FuriousPC]7;file://Shiva/home/enrique/tiendaine/projects/FuriousPC]0;enrique@Shiva: ~/tiendaine/projects/FuriousPCenrique@Shiva:~/tiendaine/projects/FuriousPC$ rails server
-Warning: Running `gem pristine --all` to regenerate your installed gemspecs (and deleting then reinstalling your bundle if you use bundle --path) will improve the startup performance of Spring.
-=> Booting WEBrick
-=> Rails 4.1.1 application starting in development on http://0.0.0.0:3000
-=> Run `rails server -h` for more startup options
-=> Notice: server is listening on all interfaces (0.0.0.0). Consider using 127.0.0.1 (--binding option)
-=> Ctrl-C to shutdown server
-[2015-04-20 12:21:31] INFO  WEBrick 1.3.1
-[2015-04-20 12:21:31] INFO  ruby 2.1.2 (2014-05-08) [x86_64-linux-gnu]
-[2015-04-20 12:21:31] INFO  WEBrick::HTTPServer#start: pid=15812 port=3000
-
-
-Started GET "/admin/manufacturer/index" for 127.0.0.1 at 2015-04-20 12:21:36 +0200
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-Processing by Admin::ManufacturerController#index as HTML
-  [1m[35mManufacturer Load (0.5ms)[0m  SELECT `manufacturers`.* FROM `manufacturers`
-  Rendered admin/manufacturer/_manufacturer.html.erb (0.0ms)
-  Rendered admin/manufacturer/index.html.erb within layouts/application (15.6ms)
-Completed 200 OK in 515ms (Views: 496.1ms | ActiveRecord: 0.5ms)
-
-
-Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/assets/admin/customer.css?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/assets/admin/manufacturer.css?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/assets/admin/item.css?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/assets/about.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/assets/admin/customer.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/assets/admin/item.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/assets/admin/manufacturer.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 12:21:37 +0200
-
-
-Started GET "/admin/item/index" for 127.0.0.1 at 2015-04-20 12:21:39 +0200
-Processing by Admin::ItemController#index as HTML
-  [1m[36mItem Load (0.9ms)[0m  [1mSELECT `items`.* FROM `items`[0m
-  Rendered admin/item/_item.html.erb (0.1ms)
-  Rendered admin/item/index.html.erb within layouts/application (18.4ms)
-Completed 200 OK in 140ms (Views: 131.5ms | ActiveRecord: 0.9ms)
-
-
-Started GET "/admin/item/new" for 127.0.0.1 at 2015-04-20 12:21:40 +0200
-Processing by Admin::ItemController#new as HTML
-  Rendered admin/item/_form_1.html.erb (1.9ms)
-  Rendered admin/item/new.html.erb within layouts/application (18.9ms)
-Completed 200 OK in 137ms (Views: 131.2ms | ActiveRecord: 2.4ms)
-
-
-Started POST "/admin/item/choosetype" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-Processing by Admin::ItemController#choosetype as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oR9jaXvRSLIH7N3DrFcIjFkH/dewb6SS8m2Sf+GkQ7c=", "itemtype"=>"procesador", "commit"=>"Siguiente"}
-CARGADO pre manufacturer  [1m[35mManufacturer Load (0.5ms)[0m  SELECT `manufacturers`.* FROM `manufacturers`
-CARGADO  Rendered admin/item/_form_2.html.erb (79.1ms)
-  Rendered admin/item/choosetype.html.erb within layouts/application (83.1ms)
-Completed 200 OK in 188ms (Views: 185.2ms | ActiveRecord: 0.5ms)
-
-
-Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started GET "/assets/admin/item.css?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started GET "/assets/admin/manufacturer.css?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started GET "/assets/admin/customer.css?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started GET "/assets/about.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started GET "/assets/admin/customer.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started GET "/assets/admin/item.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started GET "/assets/admin/manufacturer.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-20 12:21:42 +0200
-
-
-Started POST "/admin/item/choosetype" for 127.0.0.1 at 2015-04-20 12:21:47 +0200
-Processing by Admin::ItemController#choosetype as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oR9jaXvRSLIH7N3DrFcIjFkH/dewb6SS8m2Sf+GkQ7c=", "itemtype"=>"placabase", "commit"=>"Siguiente"}
-CARGADO pre manufacturer  [1m[36mManufacturer Load (0.2ms)[0m  [1mSELECT `manufacturers`.* FROM `manufacturers`[0m
-  Rendered admin/item/_form_2.html.erb (4.3ms)
-  Rendered admin/item/choosetype.html.erb within layouts/application (6.1ms)
-Completed 500 Internal Server Error in 10ms
-
-SystemStackError (stack level too deep):
-  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:79
-
-
-  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
-  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
-  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
-  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.6ms)
-
-
-Started POST "/admin/item/choosetype" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-Processing by Admin::ItemController#choosetype as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oR9jaXvRSLIH7N3DrFcIjFkH/dewb6SS8m2Sf+GkQ7c=", "itemtype"=>"procesador", "commit"=>"Siguiente"}
-CARGADO pre manufacturer  [1m[35mManufacturer Load (0.2ms)[0m  SELECT `manufacturers`.* FROM `manufacturers`
-CARGADO  Rendered admin/item/_form_2.html.erb (3.5ms)
-  Rendered admin/item/choosetype.html.erb within layouts/application (5.8ms)
-Completed 200 OK in 112ms (Views: 110.3ms | ActiveRecord: 0.2ms)
-
-
-Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started GET "/assets/admin/manufacturer.css?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started GET "/assets/admin/customer.css?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started GET "/assets/admin/item.css?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started GET "/assets/about.js?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started GET "/assets/admin/customer.js?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started GET "/assets/admin/item.js?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started GET "/assets/admin/manufacturer.js?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-20 12:22:08 +0200
-
-
-Started POST "/admin/item/create" for 127.0.0.1 at 2015-04-20 12:22:37 +0200
-
-ActionController::RoutingError (No route matches [POST] "/admin/item/create"):
-  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
-  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
-  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
-  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.1.1) lib/rails/engine.rb:514:in `call'
-  railties (4.1.1) lib/rails/application.rb:144:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/re
+[1m[32m      create[0m    db/migrate/20150423080631_add_item_cover_column.rb
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ cd[Kd db/migrate/20150423 0806[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/db/migrateramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/db/migrate$ subl 201504 23080631_add_item_cover_column.rb 
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/db/migrateramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/db/migrate$ rake db:mig rate
+(in /home/ramon/tiendaine/projects/FuriousPC)
+== 20150423080631 AddItemCoverColumn: migrating ===============================
+-- add_column(:items, :cover_image, :string)
+   -> 0.1831s
+== 20150423080631 AddItemCoverColumn: migrated (0.1832s) ======================
+
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/db/migrateramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/db/migrate$ cd ..
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/dbramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/db$ cd ..
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ cd adpp[K[K[Kpp/views/admin/ite m/
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/app/views/admin/itemramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/app/views/admin/item$ l s
+create.html.erb   _form.html.erb  new.html.erb
+destroy.html.erb  index.html.erb  show.html.erb
+edit.html.erb     _item.html.erb  update.html.erb
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/app/views/admin/itemramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/app/views/admin/item$ s ubl _form.html.erb 
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/app/views/admin/itemramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/app/views/admin/item$ s ubl show.html.erb 
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/app/views/admin/itemramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/app/views/admin/item$ g em install file-column
+Fetching: file-column-0.3.2.gemFetching: file-column-0.3.2.gem ( 13%)Fetching: file-column-0.3.2.gem ( 26%)Fetching: file-column-0.3.2.gem ( 38%)Fetching: file-column-0.3.2.gem ( 51%)Fetching: file-column-0.3.2.gem ( 64%)Fetching: file-column-0.3.2.gem ( 77%)Fetching: file-column-0.3.2.gem ( 89%)Fetching: file-column-0.3.2.gem (100%)Fetching: file-column-0.3.2.gem (100%)
+**************************************************
+
+  Thank you for installing file-column-0.3.2
+  
+**************************************************
+Successfully installed file-column-0.3.2
+Parsing documentation for file-column-0.3.2
+Installing ri documentation for file-column-0.3.2
+Done installing documentation for file-column after 0 seconds
+1 gem installed
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/app/views/admin/itemramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/app/views/admin/item$ c d ..
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/app/views/adminramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/app/views/admin$ cd ..
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/app/viewsramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/app/views$ cd ..
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/appramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/app$ cd[K[Ksubl g[KGe[K[K[K[K[K[K[Kcd ..
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ subl Gemfile
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ bundle install
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.2
+Using minitest 5.5.1
+Using thread_safe 0.3.4
+Using tzinfo 1.2.2
+Using activesupport 4.1.1
+Using builder 3.2.2
+Using erubis 2.7.0
+Using actionview 4.1.1
+Using rack 1.5.2
+Using rack-test 0.6.3
+Using actionpack 4.1.1
+Using mime-types 1.25.1
+Using polyglot 0.3.5
+Using treetop 1.4.15
+Using mail 2.5.4
+Using actionmailer 4.1.1
+Using activemodel 4.1.1
+Using arel 5.0.1.20140414130214
+Using activerecord 4.1.1
+Using coffee-script-source 1.9.1
+Using execjs 2.4.0
+Using coffee-script 2.3.0
+Using thor 0.19.1
+Using railties 4.1.1
+Using coffee-rails 4.0.1
+Using file-column 0.3.2
+Using hike 1.2.3
+Using multi_json 1.11.0
+Using jbuilder 2.2.11
+Using jquery-rails 3.1.2
+Using mysql2 0.3.18
+Using bundler 1.9.2
+Using tilt 1.4.1
+Using sprockets 2.12.3
+Using sprockets-rails 2.2.4
+Using rails 4.1.1
+Using rdoc 4.2.0
+Using sass 3.2.19
+Using sass-rails 4.0.5
+Using sdoc 0.4.1
+Using spring 1.3.3
+Using turbolinks 2.5.3
+Using uglifier 2.7.1
+Using will_paginate 3.0.5
+[32mBundle complete! 12 Gemfile dependencies, 46 gems now installed.[0m
+[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ bundle show fiel[K[Kle-colum n
+/home/ramon/.rvm/gems/ruby-2.1.2/gems/file-column-0.3.2
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ bundle install
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.2
+Using minitest 5.5.1
+Using thread_safe 0.3.4
+Using tzinfo 1.2.2
+Using activesupport 4.1.1
+Using builder 3.2.2
+Using erubis 2.7.0
+Using actionview 4.1.1
+Using rack 1.5.2
+Using rack-test 0.6.3
+Using actionpack 4.1.1
+Using mime-types 1.25.1
+Using polyglot 0.3.5
+Using treetop 1.4.15
+Using mail 2.5.4
+Using actionmailer 4.1.1
+Using activemodel 4.1.1
+Using arel 5.0.1.20140414130214
+Using activerecord 4.1.1
+Using climate_control 0.0.3
+Using cocaine 0.5.4
+Using coffee-script-source 1.9.1
+Using execjs 2.4.0
+Using coffee-script 2.3.0
+Using thor 0.19.1
+Using railties 4.1.1
+Using coffee-rails 4.0.1
+Using file-column 0.3.2
+Using hike 1.2.3
+Using multi_json 1.11.0
+Using jbuilder 2.2.11
+Using jquery-rails 3.1.2
+Using mysql2 0.3.18
+Using paperclip 4.1.1
+Using bundler 1.9.2
+Using tilt 1.4.1
+Using sprockets 2.12.3
+Using sprockets-rails 2.2.4
+Using rails 4.1.1
+Using rdoc 4.2.0
+Using sass 3.2.19
+Using sass-rails 4.0.5
+Using sdoc 0.4.1
+Using spring 1.3.3
+Using turbolinks 2.5.3
+Using uglifier 2.7.1
+Using will_paginate 3.0.5
+[32mBundle complete! 13 Gemfile dependencies, 49 gems now installed.[0m
+[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ ^C
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ cd .[Kconfig/[K[K[K[K[K[K[Kapp/controllers/
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/app/controllersramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/app/controllers$ ls
+about_controller.rb  [0m[01;34madmin[0m  application_controller.rb  [01;34mconcerns[0m
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/app/controllersramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/app/controllers$ cd adm in/
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/app/controllers/adminramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/app/controllers/admin$  ls
+customer_controller.rb  manufacturer_controller.rb
+item_controller.rb      provider_controller.rb
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/app/controllers/adminramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/app/controllers/admin$  subl item_controller.rb 
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/app/controllers/adminramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/app/controllers/admin$  cd ..
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/app/controllersramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/app/controllers$ cd.[K ..
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/appramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/app$ cd ..
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPCramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC$ cd db/migrate/
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/db/migrateramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC/db/migrate$ subl 20150
+20150316181027_create_manufacturers.rb
+20150413142800_create_customers.rb
+20150422150541_create_providers.rb
+20150422174334_create_items.rb
+20150423080631_add_item_cover_column.rb
+]0;ramon@ramon-Aspire-E5-571: ~/tiendaine/projects/FuriousPC/db/migrateramon@ramon-Aspire-E5-571:~/tiendaine/projects/FuriousPC

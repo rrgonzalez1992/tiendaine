@@ -1,7 +1,7 @@
 class Admin::ItemController < ApplicationController
   def new
-    load_data
    @item = Item.new
+   load_data
    @page_title = 'Dar de alta nuevo componente'
   end
 
@@ -11,12 +11,14 @@ class Admin::ItemController < ApplicationController
       flash[:notice] = "Articulo #{@item.name} was successfully created."
       redirect_to :action => 'index'
     else
+      load_data
       @page_title = 'Crear nuevo articulo'
       render :action => 'new'
     end
   end
 
   def edit
+    load_data
     @item = Item.find(params[:id])
       @page_title = 'Editar articulo'
   end
@@ -44,21 +46,18 @@ class Admin::ItemController < ApplicationController
     @page_title = @item.name
   end
 
-  def choosetype
-    @item = Item.new
-    load_data
-    @tipo = params[:itemtype]
-  end
   def index
-     @items = Item.all
+    sort_by = params[:sort_by]
+    @items = Item.order(sort_by).paginate(:page => params[:page], :per_page => 5)
     @page_title = 'Listado de componentes'
   end
   private
   def load_data
     @manufacturers = Manufacturer.all
+    @providers = Provider.all
   end
     def item_params
-      params.require(:item).permit(:name, :description, :price, :weight, :dimensions, :id_manufacturer)
+      params.require(:item).permit(:name, :description, :price, :weight, :dimensions, :manufacturer_id, { :provider_ids => [] }, :number_cores, :core_frequency, :socket, :TDP, :watts, :cover_image)
     end
 
 end

@@ -1,0 +1,9 @@
+<br>
+<table>
+  <tr>
+    <th>Nombre</th>
+  </tr>
+  <%= render :partial => 'provider', :collection => @providers %>
+</table>
+</div>
+<p style= "margin-left: 5%;"><%= link_to 'Añadir un nuevo proveedor', :action => 'new' %></p>

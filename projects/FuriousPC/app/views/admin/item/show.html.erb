@@ -1,2 +1,38 @@
-<h1>Admin::Item#show</h1>
-<p>Find me in app/views/admin/item/show.html.erb</p>
+<dl>
+  <dt>Nombre</dt>
+  <dd><%= @item.name %></dd>
+  <dt>Descripcion</dt>
+  <dd><%= @item.description %></dd>
+  <dt>Precio</dt>
+  <dd><%= @item.price %></dd>
+  <dt>Peso</dt>
+  <dd><%= @item.weight %></dd>
+  <dt>Fabricante</dt>
+  <dd><%= @item.manufacturer.name %>
+  <dt>Dimensiones</dt>
+  <dd><%= @item.dimensions %></dd>
+  <dt>Precio</dt>
+  <dd><%= @item.price %></dd>
+  <dt>Proveedores</dt>
+  <dd><%= @item.provider_names %></dd>
+  	<dt>Nucleos </dt>
+	<dd><%= @item.number_cores %></dd>
+	<dt>Velocidad de procesador </dt>
+	<dd><%= @item.core_frequency %></dd>
+	<dt>Socket </dt>
+	<dd><%=@item.socket %></dd>
+	<dt>Potencia de diseño termico </dt>
+	<dd><%= @item.TDP %></dd>
+	<dt>Consumo energetico </dt>
+	<dd><%= @item.watts %></dd>
+  <dt>Imagen</dt>
+  <% if @item.cover_image.exists? then %>
+    <dd><%= image_tag @item.cover_image.url %></dd>
+  <% else %>
+    <dd><%= image_tag '/missing.png' %></dd>
+    <p> No hay ninguna imagen. Por favor, suba alguna. </p>
+  <% end %>
+</dl>
+
+<%= link_to 'Edit', :action => 'edit', :id => @item %> |
+<%= link_to 'Back', :action => 'index' %>

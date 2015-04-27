@@ -1,0 +1,69 @@
+<% if @item.errors.any? %>
+  <div id="errorExplanation">
+  <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
+    <ul>
+      <% @item.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div class="field">
+<p><label for="name">Nombre del articulo</label>
+ <%= text_field 'item', 'name' %></p>
+ </div>
+ <div class="field">
+ <p><label for="description">Descripcion del articulo</label>
+ <%= text_area 'item', 'description' %></p>
+ </div>
+ <div class="field">
+ <p><label for="price">Precio del articulo</label>
+ <%= number_field 'item', 'price' %></p>
+ </div>
+ <div class="field">
+ <p><label for="weight">Peso del articulo</label>
+ <%= number_field 'item', 'weight' %></p>
+ </div>
+ <div class="field">
+ <p><label for="dimensions">Dimensiones del articulo</label>
+ <%= text_field 'item', 'dimensions' %></p>
+ </div>
+ <div class="field">
+ <p><label for="manufacturer">Fabricante del articulo</label>
+<%= collection_select :item, :manufacturer_id, @manufacturers, :id, :name %></p>
+ </div>
+ <div class="field">
+  <p><label for="item[provider_ids][]">Proveedores del articulo</label><br/>
+  <%= select_tag 'item[provider_ids][]', options_from_collection_for_select(@providers, :id, :name, 
+      @item.providers.collect{|provider| provider.id}), { :multiple => true, :size => 5 } %></p>
+</div>
+<div class="field">
+  <% if @item.cover_image.exists? then %>
+    <dd><%= image_tag @item.cover_image.url %></dd>
+  <% else %>
+    <p> There is no cover image attached. Please upload one. </p>
+  <% end %>
+  <p><label for="item_cover_image">Cover image</label><br/>
+  <%= file_field 'item', :cover_image %></p>
+</div>
+ <div class="field">
+			<p><label for="core">Nucleos </label>
+			<%= number_field 'item', 'number_cores' %></p>
+		</div>
+		<div class="field">
+			<p><label for="freq">Velocidad de procesador </label>
+			<%= number_field 'item', 'core_frequency' %></p>
+		</div>
+		<div class="field">
+			<p><label for="socket">Socket </label>
+			<%= text_field 'item', 'socket' %></p>
+		</div>
+		<div class="field">
+			<p><label for="tdp">Potencia de diseño termico </label>
+			<%= text_field 'item', 'TDP' %></p>
+		</div>
+		<div class="field">
+			<p><label for="watt">Consumo energetico </label>
+			<%= number_field 'item', 'watts' %></p>
+		</div>

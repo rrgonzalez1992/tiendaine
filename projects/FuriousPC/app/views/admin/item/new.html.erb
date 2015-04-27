@@ -1,5 +1,6 @@
-<%= form_tag :action => 'choosetype' %>
-<%= render :partial => 'form_1' %>
-<%= submit_tag 'Siguiente' %>
+<%= form_tag "/admin/item/create?id=#{@item.id}", :multipart => true do %>
+<%= render :partial => 'form' %>
+<%= submit_tag 'Crear Articulo' %>
+<% end %>
 </form>
 <%= link_to 'Volver atrás', :action => 'index' %>

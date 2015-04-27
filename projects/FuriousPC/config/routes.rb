@@ -1,10 +1,42 @@
 Rails.application.routes.draw do
   namespace :admin do
+  get 'provider/new'
+  end
+
+  namespace :admin do
+  get 'provider/create'
+  post 'provider/create'
+  end
+
+  namespace :admin do
+  get 'provider/edit'
+  end
+
+  namespace :admin do
+  get 'provider/update'
+  post 'provider/update'
+  end
+
+  namespace :admin do
+  get 'provider/destroy'
+  post 'provider/destroy'
+  end
+
+  namespace :admin do
+  get 'provider/show'
+  end
+
+  namespace :admin do
+  get 'provider/index'
+  end
+
+  namespace :admin do
   get 'providers/new'
   end
 
   namespace :admin do
   get 'providers/create'
+  post 'providers/create'
   end
 
   namespace :admin do
@@ -16,15 +48,26 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
+  get 'providers/edit'
+  end
+
+  namespace :admin do
+  get 'providers/update'
+  post 'providers/update'
+  end
+
+  namespace :admin do
   get 'providers/destroy'
+  post 'providers/destroy'
   end
 
   namespace :admin do
   get 'item/new'
+  post 'item/new'
   end
 
   namespace :admin do
-  get 'item/create'
+  post 'item/create'
   end
 
   namespace :admin do
@@ -37,6 +80,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
   get 'item/destroy'
+  post 'item/destroy'
   end
 
   namespace :admin do
