@@ -6,5 +6,4 @@
   <%= render :partial => 'manufacturer', :collection => @manufacturers %>
 </table>
 </div>
-<p style= "margin-left: 45%;"><%= link_to 'Añadir un nuevo fabricante', :action => 'new' %></p> <div style="
-    margin-left: 50%;"></div><%= image_tag "add_user.png", :alt => "New user", :title => "New user" ,  :width => 20 , :left_margin => 45 %>
+<p style= "margin-left: 5%;"><%= link_to 'Añadir un nuevo fabricante', :action => 'new' %></p>
