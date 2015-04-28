@@ -2,7 +2,7 @@ require File.dirname(__FILE__) + '/../test_helper'
 
 class ItemTest < ActiveSupport::TestCase
 
-  fixtures :manufacturers, :providers, :items, :providers_items
+  fixtures :manufacturers, :providers, :items, :items_providers
   
   def test_create
     item = Item.new(
@@ -12,7 +12,7 @@ class ItemTest < ActiveSupport::TestCase
         :weight => 0.7502,
         :dimensions => '20x20x20 cm',
         :manufacturer_id => Manufacturer.find(1).id,
-        :provider_ids => Provider.find(:all),
+        :provider_ids => Provider.find(1).id,
         :socket => 'FM2',
         :TDP => 100,
         :number_cores => 4,
@@ -41,7 +41,7 @@ class ItemTest < ActiveSupport::TestCase
   
   def test_has_many_and_belongs_to_mapping
     fabricante = Manufacturer.find_by_name("Intel")
-    assert_equal 2, fabricante.items.size
+    assert_equal 1, fabricante.items.size
     
     item = Item.new(
         :name => 'Intel Core i7 4750',
@@ -50,7 +50,7 @@ class ItemTest < ActiveSupport::TestCase
         :weight => 0.5502,
         :dimensions => '20x20x20 cm',
         :manufacturer_id => Manufacturer.find(1).id,
-        :provider_ids => Provider.find(:all),
+        :provider_ids => [Provider.find(1).id, Provider.find(2).id],
         :socket => 'FM2',
         :TDP => 100,
         :number_cores => 4,
@@ -66,7 +66,7 @@ class ItemTest < ActiveSupport::TestCase
     assert_equal 'Item', item.manufacturer.name
   end
   
-  def test_has_and_belongs_to_many_authors_mapping
+  def test_has_and_belongs_to_many_providers_mapping
     item = Item.new(
         :name => 'AMD A8-6900',
         :description => 'Random APU combining for cores with a powerful AMD R7-270',
@@ -74,7 +74,7 @@ class ItemTest < ActiveSupport::TestCase
         :weight => 0.7502,
         :dimensions => '20x20x20 cm',
         :manufacturer_id => Manufacturer.find(2).id,
-        :provider_ids => Provider.find(:all),
+        :provider_ids => [Provider.find(1).id, Provider.find(2).id],
         :socket => 'FM2',
         :TDP => 100,
         :number_cores => 4,

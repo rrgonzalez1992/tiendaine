@@ -64,8 +64,8 @@ class ItemTest_Integration < ActionDispatch::IntegrationTest
         end
 
         def add_item(parameters)
-          proveedor = Provider.find(:all).first
-          fabricante = Manufacturer.find(:all).first
+          proveedor = Provider.all.first
+          fabricante = Manufacturer.all.first
 
           get "/admin/item/new"
           assert_response :success

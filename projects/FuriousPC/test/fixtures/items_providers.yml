@@ -1,0 +1,11 @@
+amdFX_providers:
+  provider_id: 1
+  item_id: 1
+
+amdFX_providers2:
+  provider_id: 2
+  item_id: 1
+
+nVidia_providers:
+  provider_id: 1
+  item_id: 2
