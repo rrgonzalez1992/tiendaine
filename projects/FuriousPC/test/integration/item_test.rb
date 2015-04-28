@@ -1,0 +1,115 @@
+require File.dirname(__FILE__) + '/../test_helper'
+
+class ItemTest_Integration < ActionDispatch::IntegrationTest
+    fixtures :providers, :manufacturers
+
+    def test_item_administration
+      fabricante = Manufacturer.create(
+        :name => 'PointOfView',
+        :tlf => '900000000',
+        :phone => '600000000',
+        :direction => 'Poligono Industrial Tecnologia')
+      proveedor = Provider.create(
+        :name => 'PCComponentes',
+        :tlf => '900000000',
+        :phone => '600000000',
+        :direction => 'Poligono Industrial Tecnologia')
+      enrique = new_session_as(:enrique)
+      procesador = enrique.add_item :item => {
+        :name => 'AMD A10-7850K',
+        :description => 'Fastest APU ever combining for cores with a powerful AMD R7-270',
+        :price => '130€',
+        :weight => '0.7502kg',
+        :dimensions => '20x20x20 cm',
+        :manufacturer_id => fabricante.id,
+        :provider_ids => [proveedor.id],
+        :socket => 'FM2',
+        :TDP => '100W',
+        :number_cores => 4,
+        :core_frequency => 3,
+      }
+      enrique.list_items
+      enrique.show_item procesador
+      enrique.edit_item(procesador, :item =>{
+        :name => 'AMD A10-7990K',
+        :description => 'AN even more fast APU ever combining for cores with a powerful AMD R7-270',
+        :price => '140€',
+        :weight => '0.7502kg',
+        :dimensions => '20x20x20 cm',
+        :manufacturer_id => fabricante.id,
+        :provider_ids => [proveedor.id],
+        :socket => 'FM2',
+        :TDP => '100W',
+        :number_cores => 4,
+        :core_frequency => 3,
+        })
+      ramon = new_session_as(:ramon)
+      ramon.delete_item procesador
+    end
+
+    private
+      module ItemTestDSL
+        attr_writer :name
+
+        def show_item(item)
+          get "/admin/item/show/#{item.id}"
+          assert_response :sucess
+          assert_template "admin/item/list"
+        end
+
+        def list_items
+          get "/admin/item/list"
+          assert_response :sucess
+          assert_template "admin/item/list"
+        end
+
+        def add_item(parameters)
+          proveedor = Provider.find(:all).first
+          fabricante = Manufacturer.find(:all).first
+
+          get "/admin/item/new"
+          assert_response :success
+          assert_template "admin/item/new"
+
+          assert_tag :tag => 'option', :attributes => { :value => fabricante.id }
+          assert_tag :tag => 'select', :attributes =>{
+            :id => 'item[provider_ids][]'
+          }
+
+          post "/admin/item/create", parameters
+          assert_response :redirect
+          follow_redirect!
+          assert_response :sucess
+          assert_template "admin/item/list"
+          assert_tag :tag => 'td', :content => parameters[:item][:name]
+          return Item.find_by_name(parameters[:item][:name])
+        end
+
+        def edit_item(item, parameters)
+          get "/admin/item/edit/#{item.id}"
+          assert_response :success
+          assert_template "admin/item/edit"
+          
+          post "/admin/item/update/#{item.id}", parameters
+          assert_response :redirect
+          follow_redirect!
+          assert_response :success
+          assert_template "admin/item/show"
+        end
+      
+      def delete_item(item)
+        post "/admin/item/destroy/#{item.id}"
+        assert_response :redirect
+        follow_redirect!
+        assert_template "admin/item/list"
+      end
+    end
+    
+    def new_session_as(name)
+      open_session do |session|
+        session.extend(ItemTestDSL)
+        session.name = name
+        yield session if block_given?
+      end
+    end
+end

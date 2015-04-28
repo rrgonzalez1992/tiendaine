@@ -4,8 +4,17 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
+intel:
+  id: 1
+  name: 'IberiaComputer'
+  tlf: '900111222'
+  phone: '644455588'
+  direction: 'Pol Industrial Tal'
 # column: value
 #
-two: {}
-#  column: value
+amd: 
+  id: 2
+  name: 'SigmaTech'
+  tlf: '999888777'
+  phone: '666555444'
+  direction: 'Avenida Puerta del Sol'

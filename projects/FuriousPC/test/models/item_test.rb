@@ -1,42 +1,91 @@
-require 'test_helper'
+require File.dirname(__FILE__) + '/../test_helper'
 
 class ItemTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
-  test "failing_create" do
-  	item = Item.new
-  	assert_equal false, item.save
-	assert item.errors[:name]
-	assert item.errors[:description]
-	assert item.errors[:price]
-	assert item.errors[:weight]
-	assert item.errors[:dimensions]
-	assert item.errors[:id_item]
-	assert item.errors[:socket]
-	assert item.errors[:TDP]
-	assert item.errors[:number_cores]
-	assert item.errors[:core_frequency]
-	assert item.errors[:factor]
-	assert item.errors[:video_memory]
-	assert item.errors[:pci_version]
-	assert item.errors[:watts]
 
+  fixtures :manufacturers, :providers, :items, :providers_items
+  
+  def test_create
+    item = Item.new(
+        :name => 'AMD A10-7850K',
+        :description => 'Fastest APU ever combining for cores with a powerful AMD R7-270',
+        :price => 130,
+        :weight => 0.7502,
+        :dimensions => '20x20x20 cm',
+        :manufacturer_id => Manufacturer.find(1).id,
+        :provider_ids => Provider.find(:all),
+        :socket => 'FM2',
+        :TDP => 100,
+        :number_cores => 4,
+        :core_frequency => 3,
+      )
+    assert item.save
   end
 
-  test "create" do
-  	item = Item.new(
-  		:name => 'Test creacion procesador',
-        :description => 'Es un procesador de test',
-        :price => '800€',
-        :weight => '1kg',
-        :dimensions => '1x1x1cm',
-        :id_manufacturer => 2,
-        :socket => 'FM3',
-        :TDP => '50W',
+  def test_failing_create
+    item = Item.new
+    assert_equal false, item.save
+    assert_equal 12, item.errors.size
+    
+    assert item.errors.on(:name)
+    assert item.errors.on(:description)
+    assert item.errors.on(:price)
+    assert item.errors.on(:weight)
+    assert item.errors.on(:dimensions)
+    assert item.errors.on(:manufacturer_id)
+    assert item.errors.on(:provider_ids)
+    assert item.errors.on(:socket)
+    assert item.errors.on(:TDP)
+    assert item.errors.on(:number_cores)
+    assert item.errors.on(:core_frequency)
+  end
+  
+  def test_has_many_and_belongs_to_mapping
+    fabricante = Manufacturer.find_by_name("Intel")
+    assert_equal 2, fabricante.items.size
+    
+    item = Item.new(
+        :name => 'Intel Core i7 4750',
+        :description => 'One random Intel processor',
+        :price => 250,
+        :weight => 0.5502,
+        :dimensions => '20x20x20 cm',
+        :manufacturer_id => Manufacturer.find(1).id,
+        :provider_ids => Provider.find(:all),
+        :socket => 'FM2',
+        :TDP => 100,
         :number_cores => 4,
-        :core_frequency => 2
-  		)
-  	assert item.save
+        :core_frequency => 3,
+      )
+    
+    fabricante.items << item
+    
+    fabricante.reload
+    item.reload
+    
+    assert_equal 3, fabricante.items.size
+    assert_equal 'Item', item.manufacturer.name
+  end
+  
+  def test_has_and_belongs_to_many_authors_mapping
+    item = Item.new(
+        :name => 'AMD A8-6900',
+        :description => 'Random APU combining for cores with a powerful AMD R7-270',
+        :price => 50,
+        :weight => 0.7502,
+        :dimensions => '20x20x20 cm',
+        :manufacturer_id => Manufacturer.find(2).id,
+        :provider_ids => Provider.find(:all),
+        :socket => 'FM2',
+        :TDP => 100,
+        :number_cores => 4,
+        :core_frequency => 3,
+      )
+    
+    assert item.save
+    
+    item.reload
+    
+    assert_equal 2, item.providers.size
+    assert_equal 2, Provider.find(2).items.size
   end
 end
