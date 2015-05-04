@@ -27,7 +27,6 @@ class ItemTest_Integration < ActionDispatch::IntegrationTest
         :TDP => '100W',
         :number_cores => 4,
         :core_frequency => 3,
-        :watts => 255
       }
       enrique.list_items
       enrique.show_item procesador
@@ -43,7 +42,6 @@ class ItemTest_Integration < ActionDispatch::IntegrationTest
         :TDP => '100W',
         :number_cores => 4,
         :core_frequency => 3,
-        :watts => 585
         })
       ramon = new_session_as(:ramon)
       ramon.delete_item procesador
@@ -54,15 +52,15 @@ class ItemTest_Integration < ActionDispatch::IntegrationTest
         attr_writer :name
 
         def show_item(item)
-          get "/admin/item/show?id=#{item.id}"
-          assert_response :success
-          assert_template "admin/item/index"
+          get "/admin/item/show/#{item.id}"
+          assert_response :sucess
+          assert_template "admin/item/list"
         end
 
         def list_items
-          get "/admin/item/index"
-          assert_response :success
-          assert_template "admin/item/index"
+          get "/admin/item/list"
+          assert_response :sucess
+          assert_template "admin/item/list"
         end
 
         def add_item(parameters)
@@ -81,18 +79,18 @@ class ItemTest_Integration < ActionDispatch::IntegrationTest
           post "/admin/item/create", parameters
           assert_response :redirect
           follow_redirect!
-          assert_response :success
-          assert_template "admin/item/index"
+          assert_response :sucess
+          assert_template "admin/item/list"
           assert_tag :tag => 'td', :content => parameters[:item][:name]
           return Item.find_by_name(parameters[:item][:name])
         end
 
         def edit_item(item, parameters)
-          get "/admin/item/edit?id=#{item.id}"
+          get "/admin/item/edit/#{item.id}"
           assert_response :success
           assert_template "admin/item/edit"
           
-          post "/admin/item/update?id=#{item.id}", parameters
+          post "/admin/item/update/#{item.id}", parameters
           assert_response :redirect
           follow_redirect!
           assert_response :success
@@ -100,10 +98,10 @@ class ItemTest_Integration < ActionDispatch::IntegrationTest
         end
       
       def delete_item(item)
-        post "/admin/item/destroy?id=#{item.id}"
+        post "/admin/item/destroy/#{item.id}"
         assert_response :redirect
         follow_redirect!
-        assert_template "admin/item/index"
+        assert_template "admin/item/list"
       end
     end
     

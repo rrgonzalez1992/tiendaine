@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  get 'catalog/show'
-  get 'catalog/show/:id' => 'catalog#show'
   get 'catalog/index'
+
+  get 'catalog/show'
+
+  get 'catalog/search'
+
   get 'catalog/latest'
 
   namespace :admin do
@@ -80,7 +83,7 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
-  post 'item/update'
+  get 'item/update'
   end
 
   namespace :admin do

@@ -16,6 +16,7 @@ amdFX:
   TDP: 150
   number_cores: 8
   core_frequency: 4
+  watts: 190
 
 nVidia980:
   id: 2

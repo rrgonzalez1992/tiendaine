@@ -1,17 +1,32 @@
- #
- amdFX:
-   id: 1
--  type: 'Processor'
-+  tipo: 'Processor'
-   name: 'AMD FX-8350'
-   description: 'For advanced gaming and multimedia experience AMD brings his new eight-core processor overclockeable'
-   price: '150€'
-@@ -20,7 +20,7 @@ amdFX:
- 
- nVidia980:
-   id: 2
--  type: 'GPU'
-+  tipo: 'GPU'
-   name: 'nVidia GTX 980'
-   description: 'Discover a brand new way of gaming thanks to its extreme overclock'
-   price: '350€'
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+amdFX:
+  id: 1
+  name: 'AMD FX-8350'
+  description: 'For advanced gaming and multimedia experience AMD brings his new eight-core processor overclockeable'
+  price: 150
+  weight: 0.7502
+  dimensions: '20x20x20 cm'
+  manufacturer_id: 2
+  socket: 'AM3+'
+  TDP: 150
+  number_cores: 8
+  core_frequency: 4
+
+nVidia980:
+  id: 2
+  name: 'nVidia GTX 980'
+  description: 'Discover a brand new way of gaming thanks to its extreme overclock'
+  price: 350
+  weight: 1.20
+  dimensions: '50x20x40 cm'
+  manufacturer_id: 1
+  TDP: 220
+  core_frequency: 1
+  video_memory:  3
+  pci_version: 'PCI-e 3.0 x16'
+  watts: 200

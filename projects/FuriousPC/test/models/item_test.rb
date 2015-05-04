@@ -9,7 +9,7 @@ class ItemTest < ActiveSupport::TestCase
         :name => 'AMD A10-7850K',
         :description => 'Fastest APU ever combining for cores with a powerful AMD R7-270',
         :price => 130,
-        :weight => 0.7502,
+        :weight => 1,
         :dimensions => '20x20x20 cm',
         :manufacturer_id => Manufacturer.find(1).id,
         :provider_ids => Provider.find(1).id,
@@ -17,6 +17,7 @@ class ItemTest < ActiveSupport::TestCase
         :TDP => 100,
         :number_cores => 4,
         :core_frequency => 3,
+        :watts => 200
       )
     assert item.save
   end
@@ -26,17 +27,18 @@ class ItemTest < ActiveSupport::TestCase
     assert_equal false, item.save
     assert_equal 12, item.errors.size
     
-    assert item.errors.on(:name)
-    assert item.errors.on(:description)
-    assert item.errors.on(:price)
-    assert item.errors.on(:weight)
-    assert item.errors.on(:dimensions)
-    assert item.errors.on(:manufacturer_id)
-    assert item.errors.on(:provider_ids)
-    assert item.errors.on(:socket)
-    assert item.errors.on(:TDP)
-    assert item.errors.on(:number_cores)
-    assert item.errors.on(:core_frequency)
+    assert item.errors[:name]
+    assert item.errors[:description]
+    assert item.errors[:price]
+    assert item.errors[:weight]
+    assert item.errors[:dimensions]
+    assert item.errors[:manufacturer_id]
+    assert item.errors[:provider_ids]
+    assert item.errors[:socket]
+    assert item.errors[:TDP]
+    assert item.errors[:number_cores]
+    assert item.errors[:core_frequency]
+    assert item.errors[:watts]
   end
   
   def test_has_many_and_belongs_to_mapping
@@ -47,7 +49,7 @@ class ItemTest < ActiveSupport::TestCase
         :name => 'Intel Core i7 4750',
         :description => 'One random Intel processor',
         :price => 250,
-        :weight => 0.5502,
+        :weight => 1,
         :dimensions => '20x20x20 cm',
         :manufacturer_id => Manufacturer.find(1).id,
         :provider_ids => [Provider.find(1).id, Provider.find(2).id],
@@ -55,6 +57,7 @@ class ItemTest < ActiveSupport::TestCase
         :TDP => 100,
         :number_cores => 4,
         :core_frequency => 3,
+        :watts => 200
       )
     
     fabricante.items << item
@@ -62,8 +65,8 @@ class ItemTest < ActiveSupport::TestCase
     fabricante.reload
     item.reload
     
-    assert_equal 3, fabricante.items.size
-    assert_equal 'Item', item.manufacturer.name
+    assert_equal 2, fabricante.items.size
+    assert_equal 'Intel', item.manufacturer.name
   end
   
   def test_has_and_belongs_to_many_providers_mapping
@@ -71,7 +74,7 @@ class ItemTest < ActiveSupport::TestCase
         :name => 'AMD A8-6900',
         :description => 'Random APU combining for cores with a powerful AMD R7-270',
         :price => 50,
-        :weight => 0.7502,
+        :weight => 2,
         :dimensions => '20x20x20 cm',
         :manufacturer_id => Manufacturer.find(2).id,
         :provider_ids => [Provider.find(1).id, Provider.find(2).id],
@@ -79,6 +82,7 @@ class ItemTest < ActiveSupport::TestCase
         :TDP => 100,
         :number_cores => 4,
         :core_frequency => 3,
+        :watts => 150
       )
     
     assert item.save
