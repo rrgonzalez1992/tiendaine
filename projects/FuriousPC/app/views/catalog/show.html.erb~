@@ -1,0 +1,14 @@
+<h2>by <%=@item.provider_names %></h2>
+<% if @item.cover_image.exists? then %>
+  <dd><%= image_tag @item.cover_image.url %></dd>
+<% else %>
+  <p>No cover image available.</p>
+<% end %>
+<dl>
+  <dt>Price</dt>
+  <dd><%= sprintf("%0.2f", @item.price) %></dd>
+  <dt>Fabricante</dt>
+  <dd><%= @item.manufacturer.name %></dd>
+  </dl>
+
+<p><%= link_to 'Catalog', :action => 'index' %> </p>
