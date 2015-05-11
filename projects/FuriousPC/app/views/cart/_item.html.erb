@@ -1,0 +1,5 @@
+<%= link_to item.item.name, :action => 'show', :controller => 'catalog', :id => item.item.id %>
+
+<%= pluralize item.amount, "item", "items" %>, <%= sprintf "%0.2f €", item.price * item.amount %>
+
+(<%= link_to '<b>-</b>'.html_safe, :controller => 'cart', :action => 'remove', :id => item.item %>)

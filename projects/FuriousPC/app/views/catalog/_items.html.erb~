@@ -9,7 +9,7 @@
     <dd>
         <strong>
           <%= link_to "+",  :controller => "cart",
-                            :action => "add", :id => item %>
+                            :action => "add", :id => book %>
         </strong>
       </dd>
     <dd><%= sprintf("Price: %.2f €", item.price) %> </dd>
