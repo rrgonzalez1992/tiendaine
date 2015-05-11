@@ -1,7 +1,7 @@
 class CatalogController < ApplicationController
   def index
   @items = Item.order("items.id desc").includes(:providers, :manufacturer).paginate(:page => params[:page], :per_page => 5)
-    @page_title = 'Catalog'
+    @page_title = 'Catálogo'
   end
 
   def show
@@ -11,6 +11,6 @@ class CatalogController < ApplicationController
 
  def latest
     @items = Item.latest 5
-    @page_title = 'Latest items'
+    @page_title = 'Últimos productos'
   end
 end

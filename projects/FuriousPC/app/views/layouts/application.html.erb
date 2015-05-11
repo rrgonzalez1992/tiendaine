@@ -10,11 +10,9 @@
 <div class="imagen_logo">
   <%= image_tag "Logo_FuriousPC.png", :alt => "Logo", :title => "Logo" ,  :width => 80 %>
 <strong><p style="font-size: 50px;margin-left: 86px;margin-top:-51px ;font-family: Verdana, Geneva, sans-serif; color:black;">FuriousPC</p></strong>
-
 </div>
 </header>
 <body>
-
   <div id="menu">
     <ul>
       <li style="margin-left: 350px;"><a href="/admin/home">Inicio</a>&nbsp;|&nbsp;</li>
@@ -22,25 +20,25 @@
       <li><a href="/admin/manufacturer/index">Fabricantes</a>&nbsp;|&nbsp;</li>
       <li><a href="/admin/provider/index">Proveedores</a>&nbsp;|&nbsp;</li>
       <li><a href="/admin/orders">Pedidos</a>&nbsp;|&nbsp;</li>
-      <li><a href="/admin/catalog">Catálogo</a>&nbsp;|&nbsp;</li>
+      <li><a href="/catalog/index">Catálogo</a>&nbsp;|&nbsp;</li>
       <li><a href="/about/index">Quiénes somos</a>&nbsp;</li>
     </ul>
   </div>
-
-  <div id="content">
+<div id="content">
     <h1><%= @page_title if @page_title %></h1>
     <% if flash[:notice] %>
       <div id="notice"><%= flash[:notice] %></div>
     <% end %>
     <%= yield %>
-  </div>
+</div>
 
   <% if @cart %>
     <div id="shopping_cart"><%= render :partial => 'cart/cart' %></div>
   <% end %>
-
+</body>
+<footer>
   <div id="footer"><br>
     &copy; 2015 FuriousPC<br>
-  </div>  
-</body>
+  </div>  </footer>
+
 </html>
