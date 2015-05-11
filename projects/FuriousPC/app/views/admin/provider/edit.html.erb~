@@ -4,5 +4,5 @@
 <% end %>
 
 
- <div style= "margin-left: 43%;"><%= link_to 'Mostrar', :action => 'show', :id => @provider %> |
+ <div style= "margin-left: 45%;"><%= link_to 'Mostrar', :action => 'show', :id => @provider %> |
 <%= link_to 'Volver atrás', :action => 'index' %></div>

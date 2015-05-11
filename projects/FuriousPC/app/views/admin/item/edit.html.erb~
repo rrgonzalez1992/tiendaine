@@ -3,5 +3,5 @@
    <div style= "margin-left: 41%;"><%= submit_tag 'Actualizar articulo' %></div>
 <% end %>
 
- <div style= "margin-left: 43%;"><%= link_to 'Mostrar', :action => 'show', :id => @item %> |
-<%= link_to 'Volver', :action => 'index' %></div><br><br>
+ <div style= "margin-left: 43%;"><%= link_to 'Show', :action => 'show', :id => @item %> |
+<%= link_to 'Back', :action => 'index' %></div><br><br>

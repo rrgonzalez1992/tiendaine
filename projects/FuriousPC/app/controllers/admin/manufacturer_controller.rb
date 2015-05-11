@@ -10,14 +10,14 @@ class Admin::ManufacturerController < ApplicationController
       flash[:notice] = "El fabricante #{@manufacturer.name} fue creado con éxito."
       redirect_to :action => 'index'
     else
-      @page_title = 'Crear nuevo fabricante.'
+      @page_title = 'Crear nuevo fabricante'
       render :action => 'new'
     end
   end
 
   def edit
       @manufacturer = Manufacturer.find(params[:id])
-      @page_title = 'Editar fabricante.'
+      @page_title = 'Editar fabricante'
   end
 
   def update

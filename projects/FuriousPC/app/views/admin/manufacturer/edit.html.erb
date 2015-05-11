@@ -2,9 +2,9 @@
 
 <%= form_tag :action => 'update', :id => @manufacturer do %>
   <%= render :partial => 'form' %>
-  <%= submit_tag 'Actualizar fabricante' %>
+   <div style= "margin-left: 41%;"><%= submit_tag 'Actualizar fabricante' %></div>
 <% end %>
 
 
-<%= link_to 'Mostrar', :action => 'show', :id => @manufacturer %> |
-<%= link_to 'Volver atrás', :action => 'index' %>
+ <div style= "margin-left: 43%;"><%= link_to 'Mostrar', :action => 'show', :id => @manufacturer %> |
+<%= link_to 'Volver atrás', :action => 'index' %></div>
