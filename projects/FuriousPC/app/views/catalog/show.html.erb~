@@ -1,11 +1,11 @@
-<h2>by <%=@item.provider_names %></h2>
+<h2>de <%=@item.provider_names %></h2>
 <% if @item.cover_image.exists? then %>
-  <dd><%= image_tag @item.cover_image.url %></dd>
+  <dd class="catalog_image"><%= image_tag @item.cover_image.url %></dd> 
 <% else %>
-  <p>No cover image available.</p>
+  <p>Imagen no disponible</p>
 <% end %>
 <dl>
-  <dt>Price</dt>
+  <dt>Precio</dt>
   <dd><%= sprintf("%0.2f", @item.price) %></dd>
   <dt>Fabricante</dt>
   <dd><%= @item.manufacturer.name %></dd>
