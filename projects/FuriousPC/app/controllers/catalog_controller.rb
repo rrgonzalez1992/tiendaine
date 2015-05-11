@@ -2,7 +2,7 @@ class CatalogController < ApplicationController
 before_filter :initialize_cart
   def index
   @items = Item.order("items.id desc").includes(:providers, :manufacturer).paginate(:page => params[:page], :per_page => 5)
-    @page_title = 'Catálogo'
+    @page_title = 'Catalog'
   end
 
   def show
@@ -12,6 +12,6 @@ before_filter :initialize_cart
 
  def latest
     @items = Item.latest 5
-    @page_title = 'Últimos productos'
+    @page_title = 'Latest items'
   end
 end
