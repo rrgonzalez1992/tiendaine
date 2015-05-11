@@ -144,6 +144,7 @@ margin-top: -170px;
   margin: 2px;
   list-style: none;
   border-bottom: 5px solid red;
+width: 120%;
 }
 
 #menu ul li {
