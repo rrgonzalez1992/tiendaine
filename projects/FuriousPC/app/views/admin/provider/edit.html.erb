@@ -1,8 +1,8 @@
 <%= form_tag :action => 'update', :id => @provider do %>
   <%= render :partial => 'form' %>
-  <%= submit_tag 'Actualizar proveedor' %>
+ <div style= "margin-left: 41%;"> <%= submit_tag 'Actualizar proveedor' %></div>
 <% end %>
 
 
-<%= link_to 'Mostrar', :action => 'show', :id => @provider %> |
-<%= link_to 'Volver atrás', :action => 'index' %>
+ <div style= "margin-left: 43%;"><%= link_to 'Mostrar', :action => 'show', :id => @provider %> |
+<%= link_to 'Volver atrás', :action => 'index' %></div>
