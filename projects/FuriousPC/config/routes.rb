@@ -165,6 +165,13 @@ Rails.application.routes.draw do
   get 'manufacturer/index'
   end
 
+  get 'cart/add'
+  post 'cart/add'
+  get 'cart/remove'
+  post 'cart/remove'
+  get 'cart/clear'
+  post 'cart/clear'
+
   get 'about/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

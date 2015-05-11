@@ -6,7 +6,13 @@
     <% for provider in item.providers %>
       <dd><%= provider.name %></dd>
     <% end %>
-    <dd><%= sprintf("Precio: %.2f €", item.price) %> </dd>
+    <dd>
+        <strong>
+          <%= link_to "+",  :controller => "cart",
+                            :action => "add", :id => item %>
+        </strong>
+      </dd>
+    <dd><%= sprintf("Price: %.2f €", item.price) %> </dd>
     <dd><small>Fabricante: <%= item.manufacturer.name %></small></dd>
   <% end %>
 </dl>
