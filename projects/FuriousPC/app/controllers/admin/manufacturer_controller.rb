@@ -17,7 +17,7 @@ class Admin::ManufacturerController < ApplicationController
 
   def edit
       @manufacturer = Manufacturer.find(params[:id])
-      @page_title = 'Editar fabricante'
+      @page_title = 'Editar fabricante.'
   end
 
   def update
