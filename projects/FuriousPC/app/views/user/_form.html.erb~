@@ -16,7 +16,7 @@
 </div>
 
 <div class="field">
-  <p><label for="user_login">Usuario</label><br/>
+  <p><label for="user_login">Inicio de sesión</label><br/>
   <%= text_field 'user', 'login' %></p>
 </div>
 

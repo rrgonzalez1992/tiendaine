@@ -1,7 +1,7 @@
 <% if flash[:cart_notice] %>
   <%= render :partial => "cart/cart_notice" %>
 <% end %>
-  <h3>TU CARRITO DE LA COMPRA</h3>
+  <div style="text-align:center;"><h3>TU CARRITO DE LA COMPRA</h3></div><div style="margin-left:40%;"><%= image_tag "carrito.png", :alt => "Carrito", :title => "Carrito" ,  :width => 20 %></div>
   <ul>
     <% for _item in @cart.cart_items %>
     <li id="cart_item_<%= _item.item.id %>">

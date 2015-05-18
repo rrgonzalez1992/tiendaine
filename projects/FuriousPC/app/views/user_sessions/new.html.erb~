@@ -1,5 +1,5 @@
 <%= form_tag :action => 'create' do %>   
   <%= render :partial => 'form' %>   
   <p style= "margin-left: 50%;"><%= submit_tag 'Inicio de sesión' %></p>
-<div style="margin-left: 55%;"><%= image_tag "login.png", :alt => "Login", :title => "Login" ,  :width => 20 %></div>
+<div style="margin-left: 45%;"><%= image_tag "login.png", :alt => "Login", :title => "Login" ,  :width => 20 %></div>
 <% end %>

@@ -8,7 +8,7 @@
   <dt>E-mail</dt>
   <dd><%= @user.email %></dd>
 
-  <dt>Usuario</dt>
+  <dt>Acceder a cuenta</dt>
   <dd><%= @user.login_count %></dd>
 
   <dt>Última petición</dt>
