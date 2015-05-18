@@ -2,11 +2,7 @@ source 'https://rubygems.org'
 
 gem 'file-column', '~> 0.3.2'
 
-gem 'authlogic', '3.4.2'
-
 gem 'paperclip', '4.1.1'
-
-gem 'coffee-script-source', '1.8.0'
 
 gem 'will_paginate', '3.0.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
