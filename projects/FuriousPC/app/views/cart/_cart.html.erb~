@@ -11,8 +11,3 @@
   </ul>
   <p id="cart_total"><strong>Total: $<%= sprintf("%0.2f", @cart.total) %> 
 </strong></p>
-
-<%= link_to _item.item.name, :action => "show", 
-      :controller => "catalog", :id => _item.item.name %>
-<%= pluralize(_item.amount, "pc", "pcs") %>,
-$<%= sprintf("%0.2f", item.price * item.amount) %>

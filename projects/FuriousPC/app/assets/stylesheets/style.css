@@ -38,8 +38,8 @@ CHAPTER 5
 Listing 5-2.
  Additions to the Style Sheet
 #shopping_cart {
-  border-left: 3px solid #666;
-  background: #aaa;
+border-left: 3px solid #000;
+background: none repeat scroll 0% 0% #FAFAD2;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -136,7 +136,7 @@ margin-top: -170px;
 #notice {
   padding: 5px;
   margin: 0px;
-  background-color: #FFCC80;
+  background-color: #90EE90;
 }
 
 #menu ul {
@@ -205,8 +205,8 @@ padding-bottom: 15px;
 }
 
 #shopping_cart {
-  border-left: 3px solid #666;
-  background: #def;
+border-left: 3px solid #000;
+background: none repeat scroll 0% 0% white;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -224,6 +224,7 @@ padding-bottom: 15px;
 
 #shopping_cart h3 {
   padding-top: 4em;
+color: red;
 }
 
 #cart_notice {
