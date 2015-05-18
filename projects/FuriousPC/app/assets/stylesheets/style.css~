@@ -136,7 +136,7 @@ margin-top: -170px;
 #notice {
   padding: 5px;
   margin: 0px;
-  background-color: #FFCC80;
+  background-color: #90EE90;
 }
 
 #menu ul {
@@ -237,7 +237,8 @@ color: red;
 }
 
 #loginlogout {
-  background-color: #4F0;
+  background-color: red;
+color:black;
   padding: 8px;
   width: 150px;
   position: absolute;
@@ -245,6 +246,16 @@ color: red;
   right: 10px;
 }
 
+#loginlogout a{
+color:black;
+
+}
+
+#loginlogout hover a{
+background-color:black;
+color:white;
+
+}
 #checkout fieldset {
   border-top: 1px solid #efefef;
   border-bottom: 1px solid #ccc;
@@ -306,7 +317,7 @@ th {
 }
 
 h1{
-    text-align: center;
+margin-left: 47%;
 }
 
 .catalog_image{
