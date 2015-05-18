@@ -1,4 +1,4 @@
-class Admin::ItemController < ApplicationController
+class Admin::ItemController < Admin::AuthenticatedController
   def new
    load_data
    @item = Item.new

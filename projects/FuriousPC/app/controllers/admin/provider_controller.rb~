@@ -1,4 +1,4 @@
-class Admin::ProviderController < Admin::AuthenticatedController
+class Admin::ProviderController < ApplicationController
   def new
     @provider = Provider.new
     @page_title = 'Dar de alta a nuevo proveedor'

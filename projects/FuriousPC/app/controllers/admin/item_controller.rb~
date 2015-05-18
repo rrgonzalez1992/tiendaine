@@ -8,7 +8,7 @@ class Admin::ItemController < ApplicationController
   def create
      @item = Item.new(item_params)
     if @item.save
-      flash[:notice] = "Articulo #{@item.name} was successfully created."
+      flash[:notice] = "EL artículo #{@item.name} ha sido creado con éxito."
       redirect_to :action => 'index'
     else
       load_data
