@@ -7,7 +7,7 @@ class Order < ActiveRecord::Base
 
   validates_presence_of :order_items,
                         :message => 'Your shopping cart is empty! ' +
-                                    'Please add at least one item to it before submitting the order.'
+                                    'Please add at least one book to it before submitting the order.'
   validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i
   validates_length_of :phone_number, :in => 7..20
 
@@ -79,7 +79,7 @@ class Order < ActiveRecord::Base
 
     # order information
     details = {
-      :description      => 'FuriousPC store purchase',
+      :description      => 'Emporium Bookstore purchase',
       :order_id         => self.id,
       :email            => email,
       :ip               => customer_ip,
@@ -97,7 +97,7 @@ class Order < ActiveRecord::Base
       eucentralbank = EuCentralBank.new
       eucentralbank.update_rates
       # Active Merchant accepts all amounts as integer values in cents
-      response = gateway.purchase(order_total, creditcard, details)
+      response = gateway.purchase(order.total, creditcard, details)
 
       if response.success?
         self.status = 'processed'

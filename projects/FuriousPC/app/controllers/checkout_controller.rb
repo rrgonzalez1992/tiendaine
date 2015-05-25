@@ -44,8 +44,8 @@ class CheckoutController < ApplicationController
   def populate_order
     for cart_item in @cart.cart_items
       order_item = OrderItem.new(:item_id => cart_item.item_id,
-                                 :price => cart_item.price,
-                                 :amount => cart_item.amount)
+                                   :price => cart_item.price,
+                                   :amount => cart_item.amount)
       @order.order_items << order_item
     end
   end
