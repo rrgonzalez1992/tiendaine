@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require File.dirname(__FILE__) + '/../test_helper'
 
 class OrderTest < ActiveSupport::TestCase
@@ -64,4 +65,12 @@ class OrderTest < ActiveSupport::TestCase
     assert order.errors[:customer_ip]
     assert order.errors[:status]
   end
+=======
+require 'test_helper'
+
+class OrderTest < ActiveSupport::TestCase
+  # test "the truth" do
+  #   assert true
+  # end
+>>>>>>> 54a2c86ec8fec8572ba0a839da8c046aa354aef2
 end
