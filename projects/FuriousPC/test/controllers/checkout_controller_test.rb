@@ -6,8 +6,8 @@ class CheckoutControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get place_order" do
-    get :place_order
+  test "should get submit_order" do
+    get :submit_order
     assert_response :success
   end
 

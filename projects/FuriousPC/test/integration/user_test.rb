@@ -27,7 +27,7 @@ class UserTest < ActionDispatch::IntegrationTest
       get '/user/new'
       assert_response :success
       assert_template 'user/new'
-      assert_tag :tag => 'h1', :content => 'Create new account'
+      assert_tag :tag => 'h1', :content => 'Crear nueva cuenta'
       assert_tag :tag => 'input', :attributes => { :id => 'user_name' }
       post '/user/create', parameters
       assert_response :redirect
@@ -35,10 +35,10 @@ class UserTest < ActionDispatch::IntegrationTest
       assert_response :success
       assert_template 'user/show'
       assert_tag :tag => 'h1', :content => "#{user_name}"
-      assert_equal flash[:notice], "Account #{user_name} was succesfully created. User logged in."
+      assert_equal flash[:notice], "La cuenta #{user_name} fue creada con éxito. Úsala para inciiar sesión."
       assert_tag :tag => 'div', :attributes => { :id => 'notice' },
-                                :content => "Account #{user_name} was succesfully created. User logged in."
-      assert_tag :tag => 'dt', :content => 'Name'
+                                :content => "La cuenta #{user_name} fue creada con éxito. Úsala para inciiar sesión."
+      assert_tag :tag => 'dt', :content => 'Nombre'
       assert_tag :tag => 'dd', :content => user_name
       return User.find_by_login(parameters[:user][:login])
     end
@@ -48,7 +48,7 @@ class UserTest < ActionDispatch::IntegrationTest
       assert_response :success
       assert_template 'user/show'
       assert_tag :tag => 'h1', :content => user_account.name
-      assert_tag :tag => 'dt', :content => 'Name'
+      assert_tag :tag => 'dt', :content => 'Nombre'
       assert_tag :tag => 'dd', :content => user_account.name
     end
 
@@ -57,7 +57,7 @@ class UserTest < ActionDispatch::IntegrationTest
       get "/user/edit?id=#{user.id}"
       assert_response :success
       assert_template 'user/edit'
-      assert_tag :tag => 'h1', :content => 'Edit account'
+      assert_tag :tag => 'h1', :content => 'Editar cuenta'
       assert_tag :tag => 'input', :attributes => { :id => 'user_name' }
       post '/user/update', parameters
       assert_response :redirect
@@ -66,10 +66,10 @@ class UserTest < ActionDispatch::IntegrationTest
       assert_template 'user/show'
       user_name = parameters[:user][:name]
       assert_tag :tag => 'h1', :content => user_name
-      assert_equal flash[:notice], "Account #{user_name} was succesfully updated."
+      assert_equal flash[:notice], "La cuenta #{user_name} fue creada con éxito."
       assert_tag :tag => 'div', :attributes => { :id => 'notice' },
-                                :content => "Account #{user_name} was succesfully updated."      
-      assert_tag :tag => 'dt', :content => 'Name'
+                                :content => "La cuenta #{user_name} fue creada con éxito."      
+      assert_tag :tag => 'dt', :content => 'Nombre'
       assert_tag :tag => 'dd', :content => user_name
     end
   end
