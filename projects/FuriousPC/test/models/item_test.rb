@@ -51,7 +51,7 @@ class ItemTest < ActiveSupport::TestCase
         :price => 250,
         :weight => 1,
         :dimensions => '20x20x20 cm',
-        :manufacturer_id => Manufacturer.find(1).id,
+        # :manufacturer_id => Manufacturer.find(1).id,
         :provider_ids => [Provider.find(1).id, Provider.find(2).id],
         :socket => 'FM2',
         :TDP => 100,
@@ -70,6 +70,8 @@ class ItemTest < ActiveSupport::TestCase
   end
   
   def test_has_and_belongs_to_many_providers_mapping
+    assert_equal 1, Provider.find(2).items.size
+
     item = Item.new(
         :name => 'AMD A8-6900',
         :description => 'Random APU combining for cores with a powerful AMD R7-270',

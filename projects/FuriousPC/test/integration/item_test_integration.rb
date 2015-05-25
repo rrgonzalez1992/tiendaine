@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + '/../test_helper'
 
-class ItemTest_Integration < ActionDispatch::IntegrationTest
+class ItemTestIntegration < ActionDispatch::IntegrationTest
     fixtures :providers, :manufacturers
 
     def test_item_administration

@@ -1,8 +1,9 @@
 class CatalogController < ApplicationController
-before_filter :initialize_cart
+before_filter :require_no_user
+#before_filter :initialize_cart
   def index
   @items = Item.order("items.id desc").includes(:providers, :manufacturer).paginate(:page => params[:page], :per_page => 5)
-    @page_title = 'Catalogo'
+    @page_title = 'Catálogo'
   end
 
   def show
