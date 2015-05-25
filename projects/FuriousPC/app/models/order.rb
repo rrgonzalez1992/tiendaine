@@ -3,11 +3,11 @@ class Order < ActiveRecord::Base
                 :card_verification_value
 
   has_many :order_items
-  has_many :books, :through => :order_items
+  has_many :items, :through => :order_items
 
   validates_presence_of :order_items,
                         :message => 'Your shopping cart is empty! ' +
-                                    'Please add at least one book to it before submitting the order.'
+                                    'Please add at least one item to it before submitting the order.'
   validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i
   validates_length_of :phone_number, :in => 7..20
 
@@ -50,7 +50,7 @@ class Order < ActiveRecord::Base
 
   def active_merchant_payment
     ActiveMerchant::Billing::Base.mode = :test
-    ActiveMerchant::Billing::AuthorizeNetGateway.default_currency = 'USD'
+    ActiveMerchant::Billing::AuthorizeNetGateway.default_currency = 'EUR'
     ActiveMerchant::Billing::AuthorizeNetGateway.wiredump_device = STDERR
     ActiveMerchant::Billing::AuthorizeNetGateway.wiredump_device.sync = true
     self.status = 'failed' # order status by default
@@ -79,7 +79,7 @@ class Order < ActiveRecord::Base
 
     # order information
     details = {
-      :description      => 'Emporium Bookstore purchase',
+      :description      => 'FuriousPC store purchase',
       :order_id         => self.id,
       :email            => email,
       :ip               => customer_ip,
@@ -89,16 +89,15 @@ class Order < ActiveRecord::Base
 
     if creditcard.valid? # validating the card automatically detects the card type
       gateway = ActiveMerchant::Billing::AuthorizeNetGateway.new( # use the test account
-        :login     => 'AAAAAAAAAA',
-        :password  => 'BBBBBBBBBB'
+        :login     => 'FuriousPC1',
+        :password  => 'FuriousPC1'
         # the statement ":test = 'true'" tells the gateway to not to process transactions
       )
 
       eucentralbank = EuCentralBank.new
       eucentralbank.update_rates
       # Active Merchant accepts all amounts as integer values in cents
-      amount = eucentralbank.exchange((self.total * 100).to_i, 'EUR', 'USD').cents
-      response = gateway.purchase(amount, creditcard, details)
+      response = gateway.purchase(order_total, creditcard, details)
 
       if response.success?
         self.status = 'processed'

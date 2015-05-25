@@ -22,7 +22,6 @@ class CreateItems < ActiveRecord::Migration
     	t.integer :item_id, :null => false
     end
      say_with_time 'Adding foreing keys' do
-      # Add foreign key reference to authors_books table
       execute 'ALTER TABLE items ADD CONSTRAINT fk_item_manufacturer
               FOREIGN KEY (manufacturer_id) REFERENCES manufacturers(id) ON DELETE CASCADE'
       execute 'ALTER TABLE items_providers ADD CONSTRAINT fk_items_providers_items

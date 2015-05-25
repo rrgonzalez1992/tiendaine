@@ -4,7 +4,7 @@ class CheckoutTest < ActionDispatch::IntegrationTest
   fixtures :manufacturers, :providers, :items
 
   test "empty_cart_shows_error_message" do
-    get '/checkout'
+    get '/checkout/index'
     assert_response :redirect
     assert_redirected_to :controller => 'catalog'
     assert_equal flash[:notice], 'Your shopping cart is empty! ' +
@@ -13,7 +13,7 @@ class CheckoutTest < ActionDispatch::IntegrationTest
 
   test "submitting_order" do
     post '/cart/add', :id => 1
-    get '/checkout'
+    get '/checkout/index'
     assert_response :success
     assert_tag :tag => 'legend', :content => 'Contact Information'
     assert_tag :tag => 'legend', :content => 'Shipping Address'
