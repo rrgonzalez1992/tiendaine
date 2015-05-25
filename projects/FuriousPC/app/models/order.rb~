@@ -97,12 +97,13 @@ class Order < ActiveRecord::Base
       eucentralbank = EuCentralBank.new
       eucentralbank.update_rates
       # Active Merchant accepts all amounts as integer values in cents
-      response = gateway.purchase(self.total, creditcard, details)
+      response = gateway.purchase(order.total, creditcard, details)
 
       if response.success?
         self.status = 'processed'
       else
         self.error_message = response.message
+	print "ERROR MENSAJEEEEEEEEEEEE!!!!!!!!!!: #{response.message}"
       end
     else
       self.error_message = 'Credit card not valid'
