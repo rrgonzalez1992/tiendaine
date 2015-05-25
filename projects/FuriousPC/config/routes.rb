@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'checkout/index'
+
+  get 'checkout/place_order'
+
+  get 'checkout/thank_you'
+
   get 'catalog/show'
   get 'catalog/show/:id' => 'catalog#show'
   get 'catalog/index'
@@ -183,6 +189,9 @@ Rails.application.routes.draw do
   get 'user/show/:id' => 'user#show'
   get 'user/edit'
   post 'user/update'
+  get 'checkout/index'
+  post 'checkout/submit_order'
+  get 'checkout/thank_you'
 
   get 'about/index'
 
