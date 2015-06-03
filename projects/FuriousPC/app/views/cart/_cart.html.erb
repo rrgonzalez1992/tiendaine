@@ -3,6 +3,13 @@
 <% end %>
   <div style="text-align:center;"><h3>TU CARRITO DE LA COMPRA</h3></div><div style="margin-left:40%;"><%= image_tag "carrito.png", :alt => "Carrito", :title => "Carrito" ,  :width => 20 %></div>
   <ul>
+  <p>
+  <strong>
+    <% unless controller.controller_name == 'checkout' %>
+      <%= link_to 'Proceder a Checkout', :controller => 'checkout' %>
+    <% end %>
+  </strong>
+</p>
     <% for _item in @cart.cart_items %>
     <li id="cart_item_<%= _item.item.id %>">
       <%= render :partial => "cart/item", :object => _item %>

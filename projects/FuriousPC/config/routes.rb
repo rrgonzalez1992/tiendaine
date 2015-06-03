@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
 
-
+  root :to => 'catalog#index'
   
   get 'catalog/show'
   get 'catalog/show/:id' => 'catalog#show'
   get 'catalog/index'
   get 'catalog/latest'
+  get 'catalog/search'
+  get 'catalog/rss'
 
   namespace :admin do
   get 'provider/new'
@@ -190,6 +192,12 @@ Rails.application.routes.draw do
   get 'checkout/index'
   post 'checkout/submit_order'
   get 'checkout/thank_you'
+
+  post 'admin/order/close'
+  post 'admin/order/destroy'
+  get 'admin/order/show'
+  get 'admin/order/show/:id' => 'admin/order#show'
+  get 'admin/order/index'
 
   get 'about/index'
 

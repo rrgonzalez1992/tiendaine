@@ -97,7 +97,7 @@ class Order < ActiveRecord::Base
       eucentralbank = EuCentralBank.new
       eucentralbank.update_rates
       # Active Merchant accepts all amounts as integer values in cents
-      response = gateway.purchase(self.total, creditcard, details)
+      response = gateway.purchase(self.total*100, creditcard, details)
 
       if response.success?
         self.status = 'processed'

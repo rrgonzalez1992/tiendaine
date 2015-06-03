@@ -4,6 +4,8 @@ class Item < ActiveRecord::Base
 	has_many :cartitems
 	has_many :carts, :through => :cart_items
 
+	acts_as_ferret :fields => [ :name, :description ]
+
 	has_attached_file :cover_image
 	validates_attachment :cover_image, :content_type => { :content_type => ["image/jpeg", "image/gif", "image/png"] }
 
