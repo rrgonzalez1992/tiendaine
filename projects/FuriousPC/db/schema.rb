@@ -40,12 +40,12 @@ ActiveRecord::Schema.define(version: 20150525162830) do
   end
 
   create_table "items", force: true do |t|
-    t.string   "name",                                              null: false
-    t.string   "description",                                       null: false
-    t.decimal  "price",                    precision: 10, scale: 0, null: false
-    t.decimal  "weight",                   precision: 10, scale: 0, null: false
-    t.string   "dimensions",                                        null: false
-    t.integer  "manufacturer_id",                                   null: false
+    t.string   "name",                                     null: false
+    t.string   "description",                              null: false
+    t.decimal  "price",           precision: 10, scale: 0, null: false
+    t.decimal  "weight",          precision: 10, scale: 0, null: false
+    t.string   "dimensions",                               null: false
+    t.integer  "manufacturer_id",                          null: false
     t.string   "socket"
     t.string   "TDP"
     t.integer  "number_cores"
@@ -56,10 +56,6 @@ ActiveRecord::Schema.define(version: 20150525162830) do
     t.integer  "watts"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "cover_image_file_name"
-    t.string   "cover_image_content_type"
-    t.integer  "cover_image_file_size"
-    t.datetime "cover_image_updated_at"
   end
 
   add_index "items", ["manufacturer_id"], name: "fk_item_manufacturer", using: :btree

@@ -9,6 +9,7 @@
   </div>
 <% end %>
 
+<fieldset style="width:0%;margin-left: 45%;">
 <div class="field">
   <p><label for="login">Usuario</label><br/>
   <%= text_field 'user_session', 'login' %></p>
@@ -19,7 +20,8 @@
   <%= password_field 'user_session', 'password' %></p>
 </div>
 
-<!-- <div class="check_box">
+<div class="check_box">
   <p><label for="remember_me">Recordarme</label><br/>
   <%= check_box 'user_session', 'remember_me' %></p>
-</div> -->
+</div>
+</fieldset>
