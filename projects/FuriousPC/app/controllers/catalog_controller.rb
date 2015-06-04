@@ -21,7 +21,7 @@ def search
 if params[:commit] == "Search" || params[:q]
 @items = Item.find_with_ferret(params[:q])
 unless @items.size > 0
-flash.now[:notice] = "No items found matching your criteria"
+flash.now[:notice] = "No hemos encontrado productos con tus criterios"
 end
 end
 end

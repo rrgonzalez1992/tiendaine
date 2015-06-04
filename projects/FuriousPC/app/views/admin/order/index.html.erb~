@@ -1,14 +1,14 @@
 <% if @orders == [] %>
-  <h2><%= "There are no orders with '#{@status}' status." %></h2>
+  <h2><%= "No hay pedidos '#{@status}' status." %></h2>
 <% else %>
   <table>
     <tr>
       <th>ID</th>
-      <th>Status</th>
-      <th>Total amount</th>
-      <th>Size</th>
-      <th>Created at</th>
-      <th>Updated at</th>
+      <th>Estado</th>
+      <th>Cantidad total</th>
+      <th>Tamaño</th>
+      <th>Creado en</th>
+      <th>Actualizado en</th>
       <th></th>
     </tr>
   <% for order in @orders %>
