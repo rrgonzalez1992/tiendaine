@@ -14,10 +14,10 @@ class Admin::OrderController < Admin::AuthenticatedController
   def index
     @status = params[:id]
     if @status.blank?
-      @status = 'todos'
+      @status = 'all'
       conditions = nil
     else
-      conditions = "estado = '#{@status}'"
+      conditions = "status = '#{@status}'"
     end
     @orders = Order.where(conditions).paginate(:page => params[:page], :per_page => 10)
     @page_title = "Mostrados pedidos: #{@status}"
