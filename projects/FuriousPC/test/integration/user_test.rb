@@ -38,7 +38,7 @@ class UserTest < ActionDispatch::IntegrationTest
       assert_equal flash[:notice], "La cuenta #{user_name} fue creada con éxito. Úsala para inciiar sesión."
       assert_tag :tag => 'div', :attributes => { :id => 'notice' },
                                 :content => "La cuenta #{user_name} fue creada con éxito. Úsala para inciiar sesión."
-      assert_tag :tag => 'dt', :content => 'Nombre'
+      assert_tag :tag => 'dt', :content => 'Name'
       assert_tag :tag => 'dd', :content => user_name
       return User.find_by_login(parameters[:user][:login])
     end
@@ -48,7 +48,7 @@ class UserTest < ActionDispatch::IntegrationTest
       assert_response :success
       assert_template 'user/show'
       assert_tag :tag => 'h1', :content => user_account.name
-      assert_tag :tag => 'dt', :content => 'Nombre'
+      assert_tag :tag => 'dt', :content => 'Name'
       assert_tag :tag => 'dd', :content => user_account.name
     end
 
@@ -69,7 +69,7 @@ class UserTest < ActionDispatch::IntegrationTest
       assert_equal flash[:notice], "La cuenta #{user_name} fue creada con éxito."
       assert_tag :tag => 'div', :attributes => { :id => 'notice' },
                                 :content => "La cuenta #{user_name} fue creada con éxito."      
-      assert_tag :tag => 'dt', :content => 'Nombre'
+      assert_tag :tag => 'dt', :content => 'Name'
       assert_tag :tag => 'dd', :content => user_name
     end
   end
