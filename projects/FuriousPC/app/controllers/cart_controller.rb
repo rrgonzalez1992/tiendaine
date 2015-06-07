@@ -6,7 +6,7 @@ class CartController < ApplicationController
     @page_title = 'Añadir articulo'
     if request.post?
       @item = @cart.add params[:id]
-      flash[:cart_notice] = "Añadido <em>#{@item.item.name}</em>."
+      flash[:cart_notice] = "Añadido #{@item.item.name}."
       redirect_to :controller => 'catalog'
     else
       render :controller => 'cart', :action => 'add', :template => 'cart/add'
@@ -18,7 +18,7 @@ class CartController < ApplicationController
     @page_title = 'Eliminar artículo'
     if request.post?
       @item = @cart.remove params[:id]
-      flash[:cart_notice] = "Eliminado 1 <em>#{@item.item.name}</em>."
+      flash[:cart_notice] = "Eliminado 1 #{@item.item.name}."
       redirect_to :controller => 'catalog'
     else
       render :controller => 'cart', :action => 'remove'
