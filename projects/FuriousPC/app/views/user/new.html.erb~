@@ -1,4 +1,4 @@
 <%= form_tag :action => 'create', :id => @user do %>
   <%= render :partial => 'form' %>
-  <div style="margin-left: 53%;"><%= submit_tag 'Crear cuenta' %></div>
+  <div style="margin-left: 50%;"><%= submit_tag 'Crear cuenta' %></div>
 <% end %>
