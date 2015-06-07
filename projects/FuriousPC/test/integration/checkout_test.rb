@@ -7,17 +7,17 @@ class CheckoutTest < ActionDispatch::IntegrationTest
     get '/checkout/index'
     assert_response :redirect
     assert_redirected_to :controller => 'catalog'
-    assert_equal flash[:notice], 'Your shopping cart is empty! ' +
-                                 'Please add at least one item to it before proceeding to check out.'
+    assert_equal flash[:notice], 'Tu carrito de la compra está vacío! ' +
+                                 'Por favor, añade al menos un producto a tu carrito de la compra antes de confirmar el pedido'
   end
 
   test "submitting_order" do
     post '/cart/add', :id => 1
     get '/checkout/index'
     assert_response :success
-    assert_tag :tag => 'legend', :content => 'Contact Information'
-    assert_tag :tag => 'legend', :content => 'Shipping Address'
-    assert_tag :tag => 'legend', :content => 'Billing Information'
+    assert_tag :tag => 'legend', :content => 'Información de contacto'
+    assert_tag :tag => 'legend', :content => 'Dirección de entrega'
+    assert_tag :tag => 'legend', :content => 'Información de facturación'
 
     post '/checkout/submit_order', :cart => { :id => Cart.last.id }, :order => {
       # Contact information
