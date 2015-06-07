@@ -6,7 +6,7 @@ class Item < ActiveRecord::Base
 
 	acts_as_ferret :fields => [ :name, :description ]
 
-	has_attached_file :cover_image
+	has_attached_file :cover_image, styles: { :medium => "125x125>", :thumb => "35x35>" }
 	validates_attachment :cover_image, :content_type => { :content_type => ["image/jpeg", "image/gif", "image/png"] }
 
 

@@ -1,8 +1,9 @@
 <div id="tablaitem" style="margin-left: 20px !important;"><tr>
   <td><%= link_to item.name, :action => 'show', :id => item %></td>
+  <td><%= image_tag item.cover_image.url (:thumb) if item.cover_image.exists? %></td>
   <td><%= link_to 'Editar', :action => 'edit', :id => item %></td>
   <td>
     <%= button_to 'Borrar', { :action => 'destroy', :id => item },
-        data: { confirm: "Estás seguro de querer borrar #{item.name}?" } %>   
+        data: { confirm: "Estás seguro de querer borrar #{item.name}?" } %>
   </td>
 </tr></div>

@@ -27,7 +27,7 @@
 	<dd><%= @item.watts %></dd>
   <dt>Imagen</dt>
   <% if @item.cover_image.exists? then %>
-    <dd><%= image_tag @item.cover_image.url %></dd>
+    <dd><%= image_tag @item.cover_image.url (:medium) %></dd>
   <% else %>
     <dd><%= image_tag '/missing.png' %></dd>
     <p> No hay ninguna imagen. Por favor, suba alguna. </p>

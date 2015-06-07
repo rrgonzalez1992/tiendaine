@@ -9,7 +9,7 @@
   </div>
 <% end %>
 <fieldset style="width:0%;margin-left: 32%;">
-	
+
 <div class="field" style="width: 97%;">
 <p><label for="name">Nombre del artículo</label><br/>
  <%= text_field 'item', 'name' %></p>
@@ -20,11 +20,11 @@
  </div>
  <div class="field">
  <p><label for="price">Precio del artículo</label><br/>
- <%= number_field 'item', 'price' %></p>
+ <%= text_field 'item', 'price' %></p>
  </div>
  <div class="field">
  <p><label for="weight">Peso del artículo</label><br/>
- <%= number_field 'item', 'weight' %></p>
+ <%= text_field 'item', 'weight' %></p>
  </div>
  <div class="field">
  <p><label for="dimensions">Dimensiones del artículo</label><br/>
@@ -36,7 +36,7 @@
  </div>
  <div class="field">
   <p><label for="item[provider_ids][]">Proveedores del artículo</label><br/>
-  <%= select_tag 'item[provider_ids][]', options_from_collection_for_select(@providers, :id, :name, 
+  <%= select_tag 'item[provider_ids][]', options_from_collection_for_select(@providers, :id, :name,
       @item.providers.collect{|provider| provider.id}), { :multiple => true, :size => 5 } %></p>
 </div>
 <div class="field">
@@ -69,4 +69,3 @@
 			<%= number_field 'item', 'watts' %></p>
 		</div>
 </fieldset>
-	
