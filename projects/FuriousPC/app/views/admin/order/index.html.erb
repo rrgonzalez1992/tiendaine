@@ -1,4 +1,4 @@
-<% if @orders == [] %>
+<div style="margin-left: 50px;"><% if @orders == [] %>
   <h2><%= "No hay pedidos con el estado: '#{@status}' ." %></h2>
 <% else %>
   <table>
@@ -24,7 +24,7 @@
   <% end %>
   </table>
 
-  <% if @orders.total_pages > 1 %>
+  <div style="margin-left: 44px;">  <% if @orders.total_pages > 1 %>
     <br/>
     <%= 'Ver página:' %>
   <% end %>
@@ -34,4 +34,5 @@
   <p></p>
 <% end %>
 
-<%= render :partial => 'navigation' %>
+<%= render :partial => 'navigation' %></div></br></br>
+</div>

@@ -1,3 +1,4 @@
+<div style="margin-left: 50px;">
 <% if @order.errors.any? %>
   <div id="errorExplanation">
   <h2><%= pluralize(@order.errors.count, "error") %> prohibió que este pedido sea guardado:</h2>
@@ -69,6 +70,7 @@
       <%= hidden_field :cart, :id %>
     </div>
 
-    <p><%= submit_tag "Enviar pedido" %></p>
+    <div style="margin-left: 44px;"><p><%= submit_tag "Enviar pedido" %></p></div></br></br>
   </div>
+  </div
 <% end %>

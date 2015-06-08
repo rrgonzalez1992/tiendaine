@@ -1,7 +1,7 @@
-<%= form_tag "/admin/item/update?id=#{@item.id}", :multipart => true do %>
+<div style="margin-left: 50px;"><%= form_tag "/admin/item/update?id=#{@item.id}", :multipart => true do %>
   <%= render :partial => 'form' %>
-  <%= submit_tag 'Actualizar articulo' %>
+  <div style="margin-left: 42%;">  <%= submit_tag 'Actualizar articulo' %> </div>
 <% end %>
 
-<%= link_to 'Show', :action => 'show', :id => @item %> |
-<%= link_to 'Back', :action => 'index' %>
+<div style="margin-left: 44%;"><%= link_to 'Mostrar', :action => 'show', :id => @item %> | </div> 
+<div style="margin-left: 44%;"><%= link_to 'Atrás', :action => 'index' %></div></div><br><br>
